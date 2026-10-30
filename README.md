@@ -35,6 +35,11 @@ The saved outputs are in `results/`; nothing was typed in by hand.
 | Sensor-health check | Stuck / dead / out-of-range sensors and unseen operating conditions are flagged; 16/16 injected faults caught; 0 false flags on real data | `FD00x/fault_injection.csv`, `monitoring.json` → `fault_injection` |
 | Why each design choice | Ablation with paired cross-validation: rolling features, per-condition normalisation and drift-from-baseline each matter; a model ensemble did not help | `results/ablation/ablation_delta_vs_baseline.csv` |
 
+**Two evaluation sets, never mixed:**
+- **142 validation engines** (20% of each subset's training engines: 20 + 52 + 20 + 50), never used for training. They are replayed cycle by cycle to their recorded failure for the maintenance results: unplanned failures, life used and cost.
+- **707 official NASA test engines** (100 + 259 + 100 + 248), used only to report RMSE (one prediction per engine at its last cycle).
+- The linear and deep-model comparisons are 5-fold cross-validation on the training engines, with the same folds and the same RUL cap (125) as the boosting model.
+
 Caveats we state openly: the replay uses the simulator's failure point as ground truth; the validation sets are small (20–52 engines per subset); cost ratios and lead times are assumptions, not real fleet data.
 At a 15-cycle lead time the current 10-cycle safety buffer is too short for 1–2 engines. The buffer is a config value and should equal the real lead time.
 The final run used the earlier promotion gate (challenger must be better with 80% bootstrap confidence; it promoted v2 on all four subsets). Across the 5 seeds that gate wrongly kept v1 in 2 runs, so the code now uses a non-inferiority gate (see `docs/methodology.md` §7.2).
