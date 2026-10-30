@@ -1,0 +1,55 @@
+stage,model,best_epoch,epochs_run,early_stop_rmse_capped,seconds,params
+cv fold 0,cnn [seed 42],13,21,20.156,5.4,33729
+cv fold 0,cnn [seed 1],11,19,19.69,4.9,33729
+cv fold 0,cnn [seed 2],8,16,20.145,4.1,33729
+cv fold 0,gru [seed 42],14,22,15.833,7.8,43009
+cv fold 0,gru [seed 1],13,21,16.375,7.6,43009
+cv fold 0,gru [seed 2],14,22,16.163,8.0,43009
+cv fold 0,tcn [seed 42],13,21,19.413,13.7,91009
+cv fold 0,tcn [seed 1],16,24,19.219,15.5,91009
+cv fold 0,tcn [seed 2],10,18,19.065,11.5,91009
+cv fold 1,cnn [seed 42],9,17,15.624,4.4,33729
+cv fold 1,cnn [seed 1],8,16,16.202,4.1,33729
+cv fold 1,cnn [seed 2],7,15,15.709,3.8,33729
+cv fold 1,gru [seed 42],19,27,13.861,9.5,43009
+cv fold 1,gru [seed 1],10,18,14.277,6.4,43009
+cv fold 1,gru [seed 2],11,19,14.253,6.8,43009
+cv fold 1,tcn [seed 42],11,19,15.757,12.3,91009
+cv fold 1,tcn [seed 1],11,19,15.538,12.1,91009
+cv fold 1,tcn [seed 2],13,21,15.629,13.3,91009
+cv fold 2,cnn [seed 42],16,24,13.715,6.2,33729
+cv fold 2,cnn [seed 1],14,22,14.919,5.8,33729
+cv fold 2,cnn [seed 2],8,16,14.578,4.2,33729
+cv fold 2,gru [seed 42],11,19,12.62,6.8,43009
+cv fold 2,gru [seed 1],8,16,12.862,5.8,43009
+cv fold 2,gru [seed 2],14,22,12.464,8.0,43009
+cv fold 2,tcn [seed 42],8,16,14.173,10.4,91009
+cv fold 2,tcn [seed 1],8,16,14.436,10.3,91009
+cv fold 2,tcn [seed 2],6,14,14.6,9.0,91009
+cv fold 3,cnn [seed 42],18,26,15.562,6.6,33729
+cv fold 3,cnn [seed 1],12,20,15.978,5.1,33729
+cv fold 3,cnn [seed 2],14,22,15.272,5.7,33729
+cv fold 3,gru [seed 42],14,22,13.936,7.8,43009
+cv fold 3,gru [seed 1],17,25,14.099,8.9,43009
+cv fold 3,gru [seed 2],19,27,13.978,9.6,43009
+cv fold 3,tcn [seed 42],8,16,15.399,10.3,91009
+cv fold 3,tcn [seed 1],17,25,14.853,15.9,91009
+cv fold 3,tcn [seed 2],14,22,15.002,13.9,91009
+cv fold 4,cnn [seed 42],8,16,14.71,4.1,33729
+cv fold 4,cnn [seed 1],14,22,15.184,5.7,33729
+cv fold 4,cnn [seed 2],16,24,14.316,6.3,33729
+cv fold 4,gru [seed 42],17,25,12.651,9.0,43009
+cv fold 4,gru [seed 1],10,18,13.56,6.5,43009
+cv fold 4,gru [seed 2],22,30,12.135,10.8,43009
+cv fold 4,tcn [seed 42],12,20,15.722,13.0,91009
+cv fold 4,tcn [seed 1],13,21,15.19,13.5,91009
+cv fold 4,tcn [seed 2],14,22,14.408,14.1,91009
+test fit,cnn [seed 42],10,18,16.282,6.9,33729
+test fit,cnn [seed 1],11,19,16.342,7.1,33729
+test fit,cnn [seed 2],11,19,16.487,7.0,33729
+test fit,gru [seed 42],10,18,14.844,9.6,43009
+test fit,gru [seed 1],10,18,14.982,9.6,43009
+test fit,gru [seed 2],11,19,15.134,10.1,43009
+test fit,tcn [seed 42],7,15,15.81,14.3,91009
+test fit,tcn [seed 1],11,19,15.663,18.0,91009
+test fit,tcn [seed 2],11,19,15.749,18.1,91009

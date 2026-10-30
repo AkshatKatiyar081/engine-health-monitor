@@ -1,0 +1,156 @@
+{
+  "subset": "FD002",
+  "engines": 208,
+  "folds": 5,
+  "base_model": "hgb",
+  "eval_cap": 125,
+  "variants": [
+    {
+      "variant": "baseline (current design)",
+      "rmse_capped": 11.554,
+      "rmse_true": 23.46,
+      "rmse_true_rul_le_60": 7.252,
+      "nasa_capped_mean": 2.408,
+      "fold_std_rmse_capped": 0.615,
+      "delta_vs_baseline": 0.0,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "raw sensors only (no rolling features)",
+      "rmse_capped": 18.708,
+      "rmse_true": 29.054,
+      "rmse_true_rul_le_60": 17.636,
+      "nasa_capped_mean": 8.744,
+      "fold_std_rmse_capped": 0.93,
+      "delta_vs_baseline": 7.147,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "no trend (slope) features",
+      "rmse_capped": 11.609,
+      "rmse_true": 23.478,
+      "rmse_true_rul_le_60": 7.308,
+      "nasa_capped_mean": 2.428,
+      "fold_std_rmse_capped": 0.59,
+      "delta_vs_baseline": 0.056,
+      "folds_better_than_baseline": "1/5"
+    },
+    {
+      "variant": "no drift-from-own-baseline",
+      "rmse_capped": 16.776,
+      "rmse_true": 27.534,
+      "rmse_true_rul_le_60": 13.918,
+      "nasa_capped_mean": 6.207,
+      "fold_std_rmse_capped": 1.005,
+      "delta_vs_baseline": 5.209,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "no cycle count",
+      "rmse_capped": 14.844,
+      "rmse_true": 25.629,
+      "rmse_true_rul_le_60": 10.727,
+      "nasa_capped_mean": 4.137,
+      "fold_std_rmse_capped": 0.855,
+      "delta_vs_baseline": 3.283,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "shorter windows (5 / 10 / 5)",
+      "rmse_capped": 11.676,
+      "rmse_true": 23.6,
+      "rmse_true_rul_le_60": 7.634,
+      "nasa_capped_mean": 2.434,
+      "fold_std_rmse_capped": 0.521,
+      "delta_vs_baseline": 0.126,
+      "folds_better_than_baseline": "1/5"
+    },
+    {
+      "variant": "longer windows (30 / 50 / 30)",
+      "rmse_capped": 11.654,
+      "rmse_true": 23.55,
+      "rmse_true_rul_le_60": 7.192,
+      "nasa_capped_mean": 2.398,
+      "fold_std_rmse_capped": 0.624,
+      "delta_vs_baseline": 0.1,
+      "folds_better_than_baseline": "2/5"
+    },
+    {
+      "variant": "RUL cap 110",
+      "rmse_capped": 13.279,
+      "rmse_true": 27.741,
+      "rmse_true_rul_le_60": 7.044,
+      "nasa_capped_mean": 2.223,
+      "fold_std_rmse_capped": 0.386,
+      "delta_vs_baseline": 1.735,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "RUL cap 140",
+      "rmse_capped": 13.076,
+      "rmse_true": 21.114,
+      "rmse_true_rul_le_60": 7.405,
+      "nasa_capped_mean": 3.899,
+      "fold_std_rmse_capped": 0.66,
+      "delta_vs_baseline": 1.522,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "no RUL cap",
+      "rmse_capped": 24.747,
+      "rmse_true": 23.477,
+      "rmse_true_rul_le_60": 7.557,
+      "nasa_capped_mean": 722.997,
+      "fold_std_rmse_capped": 1.777,
+      "delta_vs_baseline": 13.152,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "model: Ridge (linear)",
+      "rmse_capped": 16.88,
+      "rmse_true": 28.173,
+      "rmse_true_rul_le_60": 18.052,
+      "nasa_capped_mean": 5.118,
+      "fold_std_rmse_capped": 0.425,
+      "delta_vs_baseline": 5.337,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "no per-condition normalisation",
+      "rmse_capped": 18.524,
+      "rmse_true": 28.995,
+      "rmse_true_rul_le_60": 17.151,
+      "nasa_capped_mean": 8.71,
+      "fold_std_rmse_capped": 1.207,
+      "delta_vs_baseline": 6.949,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "model: XGBoost",
+      "rmse_capped": 11.369,
+      "rmse_true": 23.385,
+      "rmse_true_rul_le_60": 7.295,
+      "nasa_capped_mean": 2.31,
+      "fold_std_rmse_capped": 0.54,
+      "delta_vs_baseline": -0.182,
+      "folds_better_than_baseline": "5/5"
+    },
+    {
+      "variant": "model: HistGB + XGBoost average",
+      "rmse_capped": 11.385,
+      "rmse_true": 23.378,
+      "rmse_true_rul_le_60": 7.198,
+      "nasa_capped_mean": 2.326,
+      "fold_std_rmse_capped": 0.576,
+      "delta_vs_baseline": -0.168,
+      "folds_better_than_baseline": "5/5"
+    }
+  ],
+  "calibration": {
+    "coverage_raw_quantiles": 0.687,
+    "coverage_calibrated": 0.802,
+    "coverage_raw_rul_le_30": 0.701,
+    "coverage_calibrated_rul_le_30": 0.912,
+    "target": 0.8
+  }
+}

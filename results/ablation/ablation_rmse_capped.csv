@@ -1,0 +1,15 @@
+variant,FD001,FD002,FD003,FD004
+baseline (current design),10.233,11.554,10.652,12.179
+raw sensors only (no rolling features),19.105,18.708,17.124,18.546
+no trend (slope) features,10.252,11.609,10.588,12.134
+no drift-from-own-baseline,15.801,16.776,14.037,16.617
+no cycle count,14.28,14.844,12.698,15.769
+shorter windows (5 / 10 / 5),10.333,11.676,10.343,12.309
+longer windows (30 / 50 / 30),10.694,11.654,11.455,12.356
+RUL cap 110,12.438,13.279,13.069,14.457
+RUL cap 140,11.959,13.076,12.641,13.943
+no RUL cap,24.497,24.747,43.749,36.148
+model: Ridge (linear),17.39,16.88,17.302,17.036
+model: XGBoost,10.24,11.369,10.786,12.131
+model: HistGB + XGBoost average,10.139,11.385,10.62,12.074
+no per-condition normalisation,,18.524,,18.957

@@ -1,0 +1,2394 @@
+{
+  "table": [
+    {
+      "subset": "FD001",
+      "lead": 0,
+      "ratio": 3,
+      "policy": "reactive",
+      "t_star": 146,
+      "cost_per_1000_cycles": 15.576323987538942,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD001",
+      "lead": 0,
+      "ratio": 3,
+      "policy": "optimal fixed interval T*",
+      "t_star": 146,
+      "cost_per_1000_cycles": 7.5575403641360355,
+      "unplanned_failures": 1,
+      "engines": 20,
+      "life_used_pct": 77.33813949481589
+    },
+    {
+      "subset": "FD001",
+      "lead": 0,
+      "ratio": 3,
+      "policy": "agent, current thresholds",
+      "t_star": 146,
+      "cost_per_1000_cycles": 5.847953216374269,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 88.65053650034656
+    },
+    {
+      "subset": "FD001",
+      "lead": 0,
+      "ratio": 3,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 146,
+      "cost_per_1000_cycles": 5.497526113249038,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 94.4113386123857
+    },
+    {
+      "subset": "FD001",
+      "lead": 0,
+      "ratio": 5,
+      "policy": "reactive",
+      "t_star": 134,
+      "cost_per_1000_cycles": 25.96053997923157,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD001",
+      "lead": 0,
+      "ratio": 5,
+      "policy": "optimal fixed interval T*",
+      "t_star": 134,
+      "cost_per_1000_cycles": 7.462686567164179,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 71.28304993729778
+    },
+    {
+      "subset": "FD001",
+      "lead": 0,
+      "ratio": 5,
+      "policy": "agent, current thresholds",
+      "t_star": 134,
+      "cost_per_1000_cycles": 5.847953216374269,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 88.65053650034656
+    },
+    {
+      "subset": "FD001",
+      "lead": 0,
+      "ratio": 5,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 134,
+      "cost_per_1000_cycles": 5.497526113249038,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 94.4113386123857
+    },
+    {
+      "subset": "FD001",
+      "lead": 0,
+      "ratio": 10,
+      "policy": "reactive",
+      "t_star": 127,
+      "cost_per_1000_cycles": 51.92107995846314,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD001",
+      "lead": 0,
+      "ratio": 10,
+      "policy": "optimal fixed interval T*",
+      "t_star": 127,
+      "cost_per_1000_cycles": 7.874015748031496,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 67.5593085226628
+    },
+    {
+      "subset": "FD001",
+      "lead": 0,
+      "ratio": 10,
+      "policy": "agent, current thresholds",
+      "t_star": 127,
+      "cost_per_1000_cycles": 5.847953216374269,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 88.65053650034656
+    },
+    {
+      "subset": "FD001",
+      "lead": 0,
+      "ratio": 10,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 127,
+      "cost_per_1000_cycles": 5.497526113249038,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 94.4113386123857
+    },
+    {
+      "subset": "FD001",
+      "lead": 0,
+      "ratio": 20,
+      "policy": "reactive",
+      "t_star": 127,
+      "cost_per_1000_cycles": 103.84215991692628,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD001",
+      "lead": 0,
+      "ratio": 20,
+      "policy": "optimal fixed interval T*",
+      "t_star": 127,
+      "cost_per_1000_cycles": 7.874015748031496,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 67.5593085226628
+    },
+    {
+      "subset": "FD001",
+      "lead": 0,
+      "ratio": 20,
+      "policy": "agent, current thresholds",
+      "t_star": 127,
+      "cost_per_1000_cycles": 5.847953216374269,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 88.65053650034656
+    },
+    {
+      "subset": "FD001",
+      "lead": 0,
+      "ratio": 20,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 127,
+      "cost_per_1000_cycles": 5.497526113249038,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 94.4113386123857
+    },
+    {
+      "subset": "FD001",
+      "lead": 10,
+      "ratio": 3,
+      "policy": "reactive",
+      "t_star": 137,
+      "cost_per_1000_cycles": 15.576323987538942,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD001",
+      "lead": 10,
+      "ratio": 3,
+      "policy": "optimal fixed interval T*",
+      "t_star": 137,
+      "cost_per_1000_cycles": 8.02919708029197,
+      "unplanned_failures": 1,
+      "engines": 20,
+      "life_used_pct": 72.87893911499847
+    },
+    {
+      "subset": "FD001",
+      "lead": 10,
+      "ratio": 3,
+      "policy": "agent, current thresholds",
+      "t_star": 137,
+      "cost_per_1000_cycles": 5.847953216374269,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 88.65053650034656
+    },
+    {
+      "subset": "FD001",
+      "lead": 10,
+      "ratio": 3,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 137,
+      "cost_per_1000_cycles": 5.654509471303364,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 91.6867748814731
+    },
+    {
+      "subset": "FD001",
+      "lead": 10,
+      "ratio": 5,
+      "policy": "reactive",
+      "t_star": 125,
+      "cost_per_1000_cycles": 25.96053997923157,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD001",
+      "lead": 10,
+      "ratio": 5,
+      "policy": "optimal fixed interval T*",
+      "t_star": 125,
+      "cost_per_1000_cycles": 8.0,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 66.49538240419568
+    },
+    {
+      "subset": "FD001",
+      "lead": 10,
+      "ratio": 5,
+      "policy": "agent, current thresholds",
+      "t_star": 125,
+      "cost_per_1000_cycles": 5.847953216374269,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 88.65053650034656
+    },
+    {
+      "subset": "FD001",
+      "lead": 10,
+      "ratio": 5,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 125,
+      "cost_per_1000_cycles": 5.654509471303364,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 91.6867748814731
+    },
+    {
+      "subset": "FD001",
+      "lead": 10,
+      "ratio": 10,
+      "policy": "reactive",
+      "t_star": 118,
+      "cost_per_1000_cycles": 51.92107995846314,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD001",
+      "lead": 10,
+      "ratio": 10,
+      "policy": "optimal fixed interval T*",
+      "t_star": 118,
+      "cost_per_1000_cycles": 8.474576271186441,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 62.77164098956073
+    },
+    {
+      "subset": "FD001",
+      "lead": 10,
+      "ratio": 10,
+      "policy": "agent, current thresholds",
+      "t_star": 118,
+      "cost_per_1000_cycles": 5.847953216374269,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 88.65053650034656
+    },
+    {
+      "subset": "FD001",
+      "lead": 10,
+      "ratio": 10,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 118,
+      "cost_per_1000_cycles": 5.654509471303364,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 91.6867748814731
+    },
+    {
+      "subset": "FD001",
+      "lead": 10,
+      "ratio": 20,
+      "policy": "reactive",
+      "t_star": 118,
+      "cost_per_1000_cycles": 103.84215991692628,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD001",
+      "lead": 10,
+      "ratio": 20,
+      "policy": "optimal fixed interval T*",
+      "t_star": 118,
+      "cost_per_1000_cycles": 8.474576271186441,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 62.77164098956073
+    },
+    {
+      "subset": "FD001",
+      "lead": 10,
+      "ratio": 20,
+      "policy": "agent, current thresholds",
+      "t_star": 118,
+      "cost_per_1000_cycles": 5.847953216374269,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 88.65053650034656
+    },
+    {
+      "subset": "FD001",
+      "lead": 10,
+      "ratio": 20,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 118,
+      "cost_per_1000_cycles": 5.654509471303364,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 91.6867748814731
+    },
+    {
+      "subset": "FD001",
+      "lead": 15,
+      "ratio": 3,
+      "policy": "reactive",
+      "t_star": 132,
+      "cost_per_1000_cycles": 15.576323987538942,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD001",
+      "lead": 15,
+      "ratio": 3,
+      "policy": "optimal fixed interval T*",
+      "t_star": 132,
+      "cost_per_1000_cycles": 8.31758034026465,
+      "unplanned_failures": 1,
+      "engines": 20,
+      "life_used_pct": 70.21912381883064
+    },
+    {
+      "subset": "FD001",
+      "lead": 15,
+      "ratio": 3,
+      "policy": "agent, current thresholds",
+      "t_star": 132,
+      "cost_per_1000_cycles": 5.847953216374269,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 88.65053650034656
+    },
+    {
+      "subset": "FD001",
+      "lead": 15,
+      "ratio": 3,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 132,
+      "cost_per_1000_cycles": 5.819028222286878,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 89.0903695799379
+    },
+    {
+      "subset": "FD001",
+      "lead": 15,
+      "ratio": 5,
+      "policy": "reactive",
+      "t_star": 132,
+      "cost_per_1000_cycles": 25.96053997923157,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD001",
+      "lead": 15,
+      "ratio": 5,
+      "policy": "optimal fixed interval T*",
+      "t_star": 132,
+      "cost_per_1000_cycles": 9.073724007561436,
+      "unplanned_failures": 1,
+      "engines": 20,
+      "life_used_pct": 70.21912381883064
+    },
+    {
+      "subset": "FD001",
+      "lead": 15,
+      "ratio": 5,
+      "policy": "agent, current thresholds",
+      "t_star": 132,
+      "cost_per_1000_cycles": 5.847953216374269,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 88.65053650034656
+    },
+    {
+      "subset": "FD001",
+      "lead": 15,
+      "ratio": 5,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 132,
+      "cost_per_1000_cycles": 5.819028222286878,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 89.0903695799379
+    },
+    {
+      "subset": "FD001",
+      "lead": 15,
+      "ratio": 10,
+      "policy": "reactive",
+      "t_star": 113,
+      "cost_per_1000_cycles": 51.92107995846314,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD001",
+      "lead": 15,
+      "ratio": 10,
+      "policy": "optimal fixed interval T*",
+      "t_star": 113,
+      "cost_per_1000_cycles": 8.849557522123893,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 60.111825693392895
+    },
+    {
+      "subset": "FD001",
+      "lead": 15,
+      "ratio": 10,
+      "policy": "agent, current thresholds",
+      "t_star": 113,
+      "cost_per_1000_cycles": 5.847953216374269,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 88.65053650034656
+    },
+    {
+      "subset": "FD001",
+      "lead": 15,
+      "ratio": 10,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 113,
+      "cost_per_1000_cycles": 5.819028222286878,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 89.0903695799379
+    },
+    {
+      "subset": "FD001",
+      "lead": 15,
+      "ratio": 20,
+      "policy": "reactive",
+      "t_star": 113,
+      "cost_per_1000_cycles": 103.84215991692628,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD001",
+      "lead": 15,
+      "ratio": 20,
+      "policy": "optimal fixed interval T*",
+      "t_star": 113,
+      "cost_per_1000_cycles": 8.849557522123893,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 60.111825693392895
+    },
+    {
+      "subset": "FD001",
+      "lead": 15,
+      "ratio": 20,
+      "policy": "agent, current thresholds",
+      "t_star": 113,
+      "cost_per_1000_cycles": 5.847953216374269,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 88.65053650034656
+    },
+    {
+      "subset": "FD001",
+      "lead": 15,
+      "ratio": 20,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 113,
+      "cost_per_1000_cycles": 5.819028222286878,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 89.0903695799379
+    },
+    {
+      "subset": "FD002",
+      "lead": 0,
+      "ratio": 3,
+      "policy": "reactive",
+      "t_star": 144,
+      "cost_per_1000_cycles": 14.612214312476583,
+      "unplanned_failures": 52,
+      "engines": 52,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD002",
+      "lead": 0,
+      "ratio": 3,
+      "policy": "optimal fixed interval T*",
+      "t_star": 144,
+      "cost_per_1000_cycles": 7.479631361025778,
+      "unplanned_failures": 2,
+      "engines": 52,
+      "life_used_pct": 73.53685595536683
+    },
+    {
+      "subset": "FD002",
+      "lead": 0,
+      "ratio": 3,
+      "policy": "agent, current thresholds",
+      "t_star": 144,
+      "cost_per_1000_cycles": 5.440468717304875,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 89.0760912450771
+    },
+    {
+      "subset": "FD002",
+      "lead": 0,
+      "ratio": 3,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 144,
+      "cost_per_1000_cycles": 5.152596115735236,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 94.42464813555931
+    },
+    {
+      "subset": "FD002",
+      "lead": 0,
+      "ratio": 5,
+      "policy": "reactive",
+      "t_star": 144,
+      "cost_per_1000_cycles": 24.353690520794306,
+      "unplanned_failures": 52,
+      "engines": 52,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD002",
+      "lead": 0,
+      "ratio": 5,
+      "policy": "optimal fixed interval T*",
+      "t_star": 144,
+      "cost_per_1000_cycles": 8.01389074395619,
+      "unplanned_failures": 2,
+      "engines": 52,
+      "life_used_pct": 73.53685595536683
+    },
+    {
+      "subset": "FD002",
+      "lead": 0,
+      "ratio": 5,
+      "policy": "agent, current thresholds",
+      "t_star": 144,
+      "cost_per_1000_cycles": 5.440468717304875,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 89.0760912450771
+    },
+    {
+      "subset": "FD002",
+      "lead": 0,
+      "ratio": 5,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 144,
+      "cost_per_1000_cycles": 5.152596115735236,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 94.42464813555931
+    },
+    {
+      "subset": "FD002",
+      "lead": 0,
+      "ratio": 10,
+      "policy": "reactive",
+      "t_star": 127,
+      "cost_per_1000_cycles": 48.70738104158861,
+      "unplanned_failures": 52,
+      "engines": 52,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD002",
+      "lead": 0,
+      "ratio": 10,
+      "policy": "optimal fixed interval T*",
+      "t_star": 127,
+      "cost_per_1000_cycles": 7.874015748031496,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 64.86728204033835
+    },
+    {
+      "subset": "FD002",
+      "lead": 0,
+      "ratio": 10,
+      "policy": "agent, current thresholds",
+      "t_star": 127,
+      "cost_per_1000_cycles": 5.440468717304875,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 89.0760912450771
+    },
+    {
+      "subset": "FD002",
+      "lead": 0,
+      "ratio": 10,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 127,
+      "cost_per_1000_cycles": 5.152596115735236,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 94.42464813555931
+    },
+    {
+      "subset": "FD002",
+      "lead": 0,
+      "ratio": 20,
+      "policy": "reactive",
+      "t_star": 127,
+      "cost_per_1000_cycles": 97.41476208317722,
+      "unplanned_failures": 52,
+      "engines": 52,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD002",
+      "lead": 0,
+      "ratio": 20,
+      "policy": "optimal fixed interval T*",
+      "t_star": 127,
+      "cost_per_1000_cycles": 7.874015748031496,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 64.86728204033835
+    },
+    {
+      "subset": "FD002",
+      "lead": 0,
+      "ratio": 20,
+      "policy": "agent, current thresholds",
+      "t_star": 127,
+      "cost_per_1000_cycles": 5.440468717304875,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 89.0760912450771
+    },
+    {
+      "subset": "FD002",
+      "lead": 0,
+      "ratio": 20,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 127,
+      "cost_per_1000_cycles": 5.152596115735236,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 94.42464813555931
+    },
+    {
+      "subset": "FD002",
+      "lead": 10,
+      "ratio": 3,
+      "policy": "reactive",
+      "t_star": 135,
+      "cost_per_1000_cycles": 14.612214312476583,
+      "unplanned_failures": 52,
+      "engines": 52,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD002",
+      "lead": 10,
+      "ratio": 3,
+      "policy": "optimal fixed interval T*",
+      "t_star": 135,
+      "cost_per_1000_cycles": 7.957936620719057,
+      "unplanned_failures": 2,
+      "engines": 52,
+      "life_used_pct": 68.95341004287936
+    },
+    {
+      "subset": "FD002",
+      "lead": 10,
+      "ratio": 3,
+      "policy": "agent, current thresholds",
+      "t_star": 135,
+      "cost_per_1000_cycles": 5.440468717304875,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 89.0760912450771
+    },
+    {
+      "subset": "FD002",
+      "lead": 10,
+      "ratio": 3,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 135,
+      "cost_per_1000_cycles": 5.514142755029102,
+      "unplanned_failures": 1,
+      "engines": 52,
+      "life_used_pct": 91.3923851264899
+    },
+    {
+      "subset": "FD002",
+      "lead": 10,
+      "ratio": 5,
+      "policy": "reactive",
+      "t_star": 135,
+      "cost_per_1000_cycles": 24.353690520794306,
+      "unplanned_failures": 52,
+      "engines": 52,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD002",
+      "lead": 10,
+      "ratio": 5,
+      "policy": "optimal fixed interval T*",
+      "t_star": 135,
+      "cost_per_1000_cycles": 8.526360665056131,
+      "unplanned_failures": 2,
+      "engines": 52,
+      "life_used_pct": 68.95341004287936
+    },
+    {
+      "subset": "FD002",
+      "lead": 10,
+      "ratio": 5,
+      "policy": "agent, current thresholds",
+      "t_star": 135,
+      "cost_per_1000_cycles": 5.440468717304875,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 89.0760912450771
+    },
+    {
+      "subset": "FD002",
+      "lead": 10,
+      "ratio": 5,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 135,
+      "cost_per_1000_cycles": 5.718370264474625,
+      "unplanned_failures": 1,
+      "engines": 52,
+      "life_used_pct": 91.3923851264899
+    },
+    {
+      "subset": "FD002",
+      "lead": 10,
+      "ratio": 10,
+      "policy": "reactive",
+      "t_star": 118,
+      "cost_per_1000_cycles": 48.70738104158861,
+      "unplanned_failures": 52,
+      "engines": 52,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD002",
+      "lead": 10,
+      "ratio": 10,
+      "policy": "optimal fixed interval T*",
+      "t_star": 118,
+      "cost_per_1000_cycles": 8.474576271186441,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 60.27038803747975
+    },
+    {
+      "subset": "FD002",
+      "lead": 10,
+      "ratio": 10,
+      "policy": "agent, current thresholds",
+      "t_star": 118,
+      "cost_per_1000_cycles": 5.440468717304875,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 89.0760912450771
+    },
+    {
+      "subset": "FD002",
+      "lead": 10,
+      "ratio": 10,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 118,
+      "cost_per_1000_cycles": 6.228939038088431,
+      "unplanned_failures": 1,
+      "engines": 52,
+      "life_used_pct": 91.3923851264899
+    },
+    {
+      "subset": "FD002",
+      "lead": 10,
+      "ratio": 20,
+      "policy": "reactive",
+      "t_star": 118,
+      "cost_per_1000_cycles": 97.41476208317722,
+      "unplanned_failures": 52,
+      "engines": 52,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD002",
+      "lead": 10,
+      "ratio": 20,
+      "policy": "optimal fixed interval T*",
+      "t_star": 118,
+      "cost_per_1000_cycles": 8.474576271186441,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 60.27038803747975
+    },
+    {
+      "subset": "FD002",
+      "lead": 10,
+      "ratio": 20,
+      "policy": "agent, current thresholds",
+      "t_star": 118,
+      "cost_per_1000_cycles": 5.440468717304875,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 89.0760912450771
+    },
+    {
+      "subset": "FD002",
+      "lead": 10,
+      "ratio": 20,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 118,
+      "cost_per_1000_cycles": 7.250076585316042,
+      "unplanned_failures": 1,
+      "engines": 52,
+      "life_used_pct": 91.3923851264899
+    },
+    {
+      "subset": "FD002",
+      "lead": 15,
+      "ratio": 3,
+      "policy": "reactive",
+      "t_star": 130,
+      "cost_per_1000_cycles": 14.612214312476583,
+      "unplanned_failures": 52,
+      "engines": 52,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD002",
+      "lead": 15,
+      "ratio": 3,
+      "policy": "optimal fixed interval T*",
+      "t_star": 130,
+      "cost_per_1000_cycles": 8.251068218653307,
+      "unplanned_failures": 2,
+      "engines": 52,
+      "life_used_pct": 66.39958004129123
+    },
+    {
+      "subset": "FD002",
+      "lead": 15,
+      "ratio": 3,
+      "policy": "agent, current thresholds",
+      "t_star": 130,
+      "cost_per_1000_cycles": 5.440468717304875,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 89.0760912450771
+    },
+    {
+      "subset": "FD002",
+      "lead": 15,
+      "ratio": 3,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 130,
+      "cost_per_1000_cycles": 5.819995842860112,
+      "unplanned_failures": 2,
+      "engines": 52,
+      "life_used_pct": 89.38611813176772
+    },
+    {
+      "subset": "FD002",
+      "lead": 15,
+      "ratio": 5,
+      "policy": "reactive",
+      "t_star": 130,
+      "cost_per_1000_cycles": 24.353690520794306,
+      "unplanned_failures": 52,
+      "engines": 52,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD002",
+      "lead": 15,
+      "ratio": 5,
+      "policy": "optimal fixed interval T*",
+      "t_star": 130,
+      "cost_per_1000_cycles": 8.840430234271402,
+      "unplanned_failures": 2,
+      "engines": 52,
+      "life_used_pct": 66.39958004129123
+    },
+    {
+      "subset": "FD002",
+      "lead": 15,
+      "ratio": 5,
+      "policy": "agent, current thresholds",
+      "t_star": 130,
+      "cost_per_1000_cycles": 5.440468717304875,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 89.0760912450771
+    },
+    {
+      "subset": "FD002",
+      "lead": 15,
+      "ratio": 5,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 130,
+      "cost_per_1000_cycles": 6.235709831635835,
+      "unplanned_failures": 2,
+      "engines": 52,
+      "life_used_pct": 89.38611813176772
+    },
+    {
+      "subset": "FD002",
+      "lead": 15,
+      "ratio": 10,
+      "policy": "reactive",
+      "t_star": 113,
+      "cost_per_1000_cycles": 48.70738104158861,
+      "unplanned_failures": 52,
+      "engines": 52,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD002",
+      "lead": 15,
+      "ratio": 10,
+      "policy": "optimal fixed interval T*",
+      "t_star": 113,
+      "cost_per_1000_cycles": 8.849557522123893,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 57.716558035891616
+    },
+    {
+      "subset": "FD002",
+      "lead": 15,
+      "ratio": 10,
+      "policy": "agent, current thresholds",
+      "t_star": 113,
+      "cost_per_1000_cycles": 5.440468717304875,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 89.0760912450771
+    },
+    {
+      "subset": "FD002",
+      "lead": 15,
+      "ratio": 10,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 113,
+      "cost_per_1000_cycles": 7.27499480357514,
+      "unplanned_failures": 2,
+      "engines": 52,
+      "life_used_pct": 89.38611813176772
+    },
+    {
+      "subset": "FD002",
+      "lead": 15,
+      "ratio": 20,
+      "policy": "reactive",
+      "t_star": 113,
+      "cost_per_1000_cycles": 97.41476208317722,
+      "unplanned_failures": 52,
+      "engines": 52,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD002",
+      "lead": 15,
+      "ratio": 20,
+      "policy": "optimal fixed interval T*",
+      "t_star": 113,
+      "cost_per_1000_cycles": 8.849557522123893,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 57.716558035891616
+    },
+    {
+      "subset": "FD002",
+      "lead": 15,
+      "ratio": 20,
+      "policy": "agent, current thresholds",
+      "t_star": 113,
+      "cost_per_1000_cycles": 5.440468717304875,
+      "unplanned_failures": 0,
+      "engines": 52,
+      "life_used_pct": 89.0760912450771
+    },
+    {
+      "subset": "FD002",
+      "lead": 15,
+      "ratio": 20,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 113,
+      "cost_per_1000_cycles": 9.353564747453753,
+      "unplanned_failures": 2,
+      "engines": 52,
+      "life_used_pct": 89.38611813176772
+    },
+    {
+      "subset": "FD003",
+      "lead": 0,
+      "ratio": 3,
+      "policy": "reactive",
+      "t_star": 152,
+      "cost_per_1000_cycles": 12.914334911752045,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD003",
+      "lead": 0,
+      "ratio": 3,
+      "policy": "optimal fixed interval T*",
+      "t_star": 152,
+      "cost_per_1000_cycles": 7.2368421052631575,
+      "unplanned_failures": 1,
+      "engines": 20,
+      "life_used_pct": 69.70180727672302
+    },
+    {
+      "subset": "FD003",
+      "lead": 0,
+      "ratio": 3,
+      "policy": "agent, current thresholds",
+      "t_star": 152,
+      "cost_per_1000_cycles": 4.725897920604915,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 90.55648354865036
+    },
+    {
+      "subset": "FD003",
+      "lead": 0,
+      "ratio": 3,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 152,
+      "cost_per_1000_cycles": 4.496402877697841,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 95.48496862928747
+    },
+    {
+      "subset": "FD003",
+      "lead": 0,
+      "ratio": 5,
+      "policy": "reactive",
+      "t_star": 144,
+      "cost_per_1000_cycles": 21.52389151958674,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD003",
+      "lead": 0,
+      "ratio": 5,
+      "policy": "optimal fixed interval T*",
+      "t_star": 144,
+      "cost_per_1000_cycles": 6.944444444444445,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 66.03329110426391
+    },
+    {
+      "subset": "FD003",
+      "lead": 0,
+      "ratio": 5,
+      "policy": "agent, current thresholds",
+      "t_star": 144,
+      "cost_per_1000_cycles": 4.725897920604915,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 90.55648354865036
+    },
+    {
+      "subset": "FD003",
+      "lead": 0,
+      "ratio": 5,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 144,
+      "cost_per_1000_cycles": 4.496402877697841,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 95.48496862928747
+    },
+    {
+      "subset": "FD003",
+      "lead": 0,
+      "ratio": 10,
+      "policy": "reactive",
+      "t_star": 144,
+      "cost_per_1000_cycles": 43.04778303917348,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD003",
+      "lead": 0,
+      "ratio": 10,
+      "policy": "optimal fixed interval T*",
+      "t_star": 144,
+      "cost_per_1000_cycles": 6.944444444444445,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 66.03329110426391
+    },
+    {
+      "subset": "FD003",
+      "lead": 0,
+      "ratio": 10,
+      "policy": "agent, current thresholds",
+      "t_star": 144,
+      "cost_per_1000_cycles": 4.725897920604915,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 90.55648354865036
+    },
+    {
+      "subset": "FD003",
+      "lead": 0,
+      "ratio": 10,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 144,
+      "cost_per_1000_cycles": 4.496402877697841,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 95.48496862928747
+    },
+    {
+      "subset": "FD003",
+      "lead": 0,
+      "ratio": 20,
+      "policy": "reactive",
+      "t_star": 144,
+      "cost_per_1000_cycles": 86.09556607834696,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD003",
+      "lead": 0,
+      "ratio": 20,
+      "policy": "optimal fixed interval T*",
+      "t_star": 144,
+      "cost_per_1000_cycles": 6.944444444444445,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 66.03329110426391
+    },
+    {
+      "subset": "FD003",
+      "lead": 0,
+      "ratio": 20,
+      "policy": "agent, current thresholds",
+      "t_star": 144,
+      "cost_per_1000_cycles": 4.725897920604915,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 90.55648354865036
+    },
+    {
+      "subset": "FD003",
+      "lead": 0,
+      "ratio": 20,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 144,
+      "cost_per_1000_cycles": 4.496402877697841,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 95.48496862928747
+    },
+    {
+      "subset": "FD003",
+      "lead": 10,
+      "ratio": 3,
+      "policy": "reactive",
+      "t_star": 143,
+      "cost_per_1000_cycles": 12.914334911752045,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD003",
+      "lead": 10,
+      "ratio": 3,
+      "policy": "optimal fixed interval T*",
+      "t_star": 143,
+      "cost_per_1000_cycles": 7.668177065179505,
+      "unplanned_failures": 1,
+      "engines": 20,
+      "life_used_pct": 65.57472658270653
+    },
+    {
+      "subset": "FD003",
+      "lead": 10,
+      "ratio": 3,
+      "policy": "agent, current thresholds",
+      "t_star": 143,
+      "cost_per_1000_cycles": 4.725897920604915,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 90.55648354865036
+    },
+    {
+      "subset": "FD003",
+      "lead": 10,
+      "ratio": 3,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 143,
+      "cost_per_1000_cycles": 4.584001833600733,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 93.487732337314
+    },
+    {
+      "subset": "FD003",
+      "lead": 10,
+      "ratio": 5,
+      "policy": "reactive",
+      "t_star": 135,
+      "cost_per_1000_cycles": 21.52389151958674,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD003",
+      "lead": 10,
+      "ratio": 5,
+      "policy": "optimal fixed interval T*",
+      "t_star": 135,
+      "cost_per_1000_cycles": 7.407407407407407,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 61.90621041024741
+    },
+    {
+      "subset": "FD003",
+      "lead": 10,
+      "ratio": 5,
+      "policy": "agent, current thresholds",
+      "t_star": 135,
+      "cost_per_1000_cycles": 4.725897920604915,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 90.55648354865036
+    },
+    {
+      "subset": "FD003",
+      "lead": 10,
+      "ratio": 5,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 135,
+      "cost_per_1000_cycles": 4.584001833600733,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 93.487732337314
+    },
+    {
+      "subset": "FD003",
+      "lead": 10,
+      "ratio": 10,
+      "policy": "reactive",
+      "t_star": 135,
+      "cost_per_1000_cycles": 43.04778303917348,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD003",
+      "lead": 10,
+      "ratio": 10,
+      "policy": "optimal fixed interval T*",
+      "t_star": 135,
+      "cost_per_1000_cycles": 7.407407407407407,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 61.90621041024741
+    },
+    {
+      "subset": "FD003",
+      "lead": 10,
+      "ratio": 10,
+      "policy": "agent, current thresholds",
+      "t_star": 135,
+      "cost_per_1000_cycles": 4.725897920604915,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 90.55648354865036
+    },
+    {
+      "subset": "FD003",
+      "lead": 10,
+      "ratio": 10,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 135,
+      "cost_per_1000_cycles": 4.584001833600733,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 93.487732337314
+    },
+    {
+      "subset": "FD003",
+      "lead": 10,
+      "ratio": 20,
+      "policy": "reactive",
+      "t_star": 135,
+      "cost_per_1000_cycles": 86.09556607834696,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD003",
+      "lead": 10,
+      "ratio": 20,
+      "policy": "optimal fixed interval T*",
+      "t_star": 135,
+      "cost_per_1000_cycles": 7.407407407407407,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 61.90621041024741
+    },
+    {
+      "subset": "FD003",
+      "lead": 10,
+      "ratio": 20,
+      "policy": "agent, current thresholds",
+      "t_star": 135,
+      "cost_per_1000_cycles": 4.725897920604915,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 90.55648354865036
+    },
+    {
+      "subset": "FD003",
+      "lead": 10,
+      "ratio": 20,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 135,
+      "cost_per_1000_cycles": 4.584001833600733,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 93.487732337314
+    },
+    {
+      "subset": "FD003",
+      "lead": 15,
+      "ratio": 3,
+      "policy": "reactive",
+      "t_star": 138,
+      "cost_per_1000_cycles": 12.914334911752045,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD003",
+      "lead": 15,
+      "ratio": 3,
+      "policy": "optimal fixed interval T*",
+      "t_star": 138,
+      "cost_per_1000_cycles": 7.930785868781543,
+      "unplanned_failures": 1,
+      "engines": 20,
+      "life_used_pct": 63.28190397491959
+    },
+    {
+      "subset": "FD003",
+      "lead": 15,
+      "ratio": 3,
+      "policy": "agent, current thresholds",
+      "t_star": 138,
+      "cost_per_1000_cycles": 5.181347150259067,
+      "unplanned_failures": 1,
+      "engines": 20,
+      "life_used_pct": 90.55648354865036
+    },
+    {
+      "subset": "FD003",
+      "lead": 15,
+      "ratio": 3,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 138,
+      "cost_per_1000_cycles": 5.169172932330827,
+      "unplanned_failures": 1,
+      "engines": 20,
+      "life_used_pct": 90.77498538381887
+    },
+    {
+      "subset": "FD003",
+      "lead": 15,
+      "ratio": 5,
+      "policy": "reactive",
+      "t_star": 130,
+      "cost_per_1000_cycles": 21.52389151958674,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD003",
+      "lead": 15,
+      "ratio": 5,
+      "policy": "optimal fixed interval T*",
+      "t_star": 130,
+      "cost_per_1000_cycles": 7.6923076923076925,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 59.61338780246047
+    },
+    {
+      "subset": "FD003",
+      "lead": 15,
+      "ratio": 5,
+      "policy": "agent, current thresholds",
+      "t_star": 130,
+      "cost_per_1000_cycles": 5.652378709373528,
+      "unplanned_failures": 1,
+      "engines": 20,
+      "life_used_pct": 90.55648354865036
+    },
+    {
+      "subset": "FD003",
+      "lead": 15,
+      "ratio": 5,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 130,
+      "cost_per_1000_cycles": 5.639097744360902,
+      "unplanned_failures": 1,
+      "engines": 20,
+      "life_used_pct": 90.77498538381887
+    },
+    {
+      "subset": "FD003",
+      "lead": 15,
+      "ratio": 10,
+      "policy": "reactive",
+      "t_star": 130,
+      "cost_per_1000_cycles": 43.04778303917348,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD003",
+      "lead": 15,
+      "ratio": 10,
+      "policy": "optimal fixed interval T*",
+      "t_star": 130,
+      "cost_per_1000_cycles": 7.6923076923076925,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 59.61338780246047
+    },
+    {
+      "subset": "FD003",
+      "lead": 15,
+      "ratio": 10,
+      "policy": "agent, current thresholds",
+      "t_star": 130,
+      "cost_per_1000_cycles": 6.829957607159679,
+      "unplanned_failures": 1,
+      "engines": 20,
+      "life_used_pct": 90.55648354865036
+    },
+    {
+      "subset": "FD003",
+      "lead": 15,
+      "ratio": 10,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 130,
+      "cost_per_1000_cycles": 6.81390977443609,
+      "unplanned_failures": 1,
+      "engines": 20,
+      "life_used_pct": 90.77498538381887
+    },
+    {
+      "subset": "FD003",
+      "lead": 15,
+      "ratio": 20,
+      "policy": "reactive",
+      "t_star": 130,
+      "cost_per_1000_cycles": 86.09556607834696,
+      "unplanned_failures": 20,
+      "engines": 20,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD003",
+      "lead": 15,
+      "ratio": 20,
+      "policy": "optimal fixed interval T*",
+      "t_star": 130,
+      "cost_per_1000_cycles": 7.6923076923076925,
+      "unplanned_failures": 0,
+      "engines": 20,
+      "life_used_pct": 59.61338780246047
+    },
+    {
+      "subset": "FD003",
+      "lead": 15,
+      "ratio": 20,
+      "policy": "agent, current thresholds",
+      "t_star": 130,
+      "cost_per_1000_cycles": 9.185115402731983,
+      "unplanned_failures": 1,
+      "engines": 20,
+      "life_used_pct": 90.55648354865036
+    },
+    {
+      "subset": "FD003",
+      "lead": 15,
+      "ratio": 20,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 130,
+      "cost_per_1000_cycles": 9.163533834586467,
+      "unplanned_failures": 1,
+      "engines": 20,
+      "life_used_pct": 90.77498538381887
+    },
+    {
+      "subset": "FD004",
+      "lead": 0,
+      "ratio": 3,
+      "policy": "reactive",
+      "t_star": 158,
+      "cost_per_1000_cycles": 11.982744847419715,
+      "unplanned_failures": 50,
+      "engines": 50,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD004",
+      "lead": 0,
+      "ratio": 3,
+      "policy": "optimal fixed interval T*",
+      "t_star": 158,
+      "cost_per_1000_cycles": 7.37163192679207,
+      "unplanned_failures": 4,
+      "engines": 50,
+      "life_used_pct": 68.78545807016415
+    },
+    {
+      "subset": "FD004",
+      "lead": 0,
+      "ratio": 3,
+      "policy": "agent, current thresholds",
+      "t_star": 158,
+      "cost_per_1000_cycles": 4.477077363896848,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 89.45495551848015
+    },
+    {
+      "subset": "FD004",
+      "lead": 0,
+      "ratio": 3,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 158,
+      "cost_per_1000_cycles": 4.281555060798082,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 93.97707696847942
+    },
+    {
+      "subset": "FD004",
+      "lead": 0,
+      "ratio": 5,
+      "policy": "reactive",
+      "t_star": 142,
+      "cost_per_1000_cycles": 19.971241412366194,
+      "unplanned_failures": 50,
+      "engines": 50,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD004",
+      "lead": 0,
+      "ratio": 5,
+      "policy": "optimal fixed interval T*",
+      "t_star": 142,
+      "cost_per_1000_cycles": 7.042253521126761,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 62.20380356821506
+    },
+    {
+      "subset": "FD004",
+      "lead": 0,
+      "ratio": 5,
+      "policy": "agent, current thresholds",
+      "t_star": 142,
+      "cost_per_1000_cycles": 4.477077363896848,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 89.45495551848015
+    },
+    {
+      "subset": "FD004",
+      "lead": 0,
+      "ratio": 5,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 142,
+      "cost_per_1000_cycles": 4.281555060798082,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 93.97707696847942
+    },
+    {
+      "subset": "FD004",
+      "lead": 0,
+      "ratio": 10,
+      "policy": "reactive",
+      "t_star": 127,
+      "cost_per_1000_cycles": 39.94248282473239,
+      "unplanned_failures": 50,
+      "engines": 50,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD004",
+      "lead": 0,
+      "ratio": 10,
+      "policy": "optimal fixed interval T*",
+      "t_star": 127,
+      "cost_per_1000_cycles": 7.874015748031496,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 55.63297924762895
+    },
+    {
+      "subset": "FD004",
+      "lead": 0,
+      "ratio": 10,
+      "policy": "agent, current thresholds",
+      "t_star": 127,
+      "cost_per_1000_cycles": 4.477077363896848,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 89.45495551848015
+    },
+    {
+      "subset": "FD004",
+      "lead": 0,
+      "ratio": 10,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 127,
+      "cost_per_1000_cycles": 4.281555060798082,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 93.97707696847942
+    },
+    {
+      "subset": "FD004",
+      "lead": 0,
+      "ratio": 20,
+      "policy": "reactive",
+      "t_star": 127,
+      "cost_per_1000_cycles": 79.88496564946477,
+      "unplanned_failures": 50,
+      "engines": 50,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD004",
+      "lead": 0,
+      "ratio": 20,
+      "policy": "optimal fixed interval T*",
+      "t_star": 127,
+      "cost_per_1000_cycles": 7.874015748031496,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 55.63297924762895
+    },
+    {
+      "subset": "FD004",
+      "lead": 0,
+      "ratio": 20,
+      "policy": "agent, current thresholds",
+      "t_star": 127,
+      "cost_per_1000_cycles": 4.477077363896848,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 89.45495551848015
+    },
+    {
+      "subset": "FD004",
+      "lead": 0,
+      "ratio": 20,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 127,
+      "cost_per_1000_cycles": 4.281555060798082,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 93.97707696847942
+    },
+    {
+      "subset": "FD004",
+      "lead": 10,
+      "ratio": 3,
+      "policy": "reactive",
+      "t_star": 149,
+      "cost_per_1000_cycles": 11.982744847419715,
+      "unplanned_failures": 50,
+      "engines": 50,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD004",
+      "lead": 10,
+      "ratio": 3,
+      "policy": "optimal fixed interval T*",
+      "t_star": 149,
+      "cost_per_1000_cycles": 7.781057150523209,
+      "unplanned_failures": 4,
+      "engines": 50,
+      "life_used_pct": 65.27018825115525
+    },
+    {
+      "subset": "FD004",
+      "lead": 10,
+      "ratio": 3,
+      "policy": "agent, current thresholds",
+      "t_star": 149,
+      "cost_per_1000_cycles": 4.477077363896848,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 89.45495551848015
+    },
+    {
+      "subset": "FD004",
+      "lead": 10,
+      "ratio": 3,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 149,
+      "cost_per_1000_cycles": 4.727718438101909,
+      "unplanned_failures": 2,
+      "engines": 50,
+      "life_used_pct": 91.58756015503144
+    },
+    {
+      "subset": "FD004",
+      "lead": 10,
+      "ratio": 5,
+      "policy": "reactive",
+      "t_star": 133,
+      "cost_per_1000_cycles": 19.971241412366194,
+      "unplanned_failures": 50,
+      "engines": 50,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD004",
+      "lead": 10,
+      "ratio": 5,
+      "policy": "optimal fixed interval T*",
+      "t_star": 133,
+      "cost_per_1000_cycles": 7.518796992481203,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 58.261308975863415
+    },
+    {
+      "subset": "FD004",
+      "lead": 10,
+      "ratio": 5,
+      "policy": "agent, current thresholds",
+      "t_star": 133,
+      "cost_per_1000_cycles": 4.477077363896848,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 89.45495551848015
+    },
+    {
+      "subset": "FD004",
+      "lead": 10,
+      "ratio": 5,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 133,
+      "cost_per_1000_cycles": 5.0779198038872355,
+      "unplanned_failures": 2,
+      "engines": 50,
+      "life_used_pct": 91.58756015503144
+    },
+    {
+      "subset": "FD004",
+      "lead": 10,
+      "ratio": 10,
+      "policy": "reactive",
+      "t_star": 118,
+      "cost_per_1000_cycles": 39.94248282473239,
+      "unplanned_failures": 50,
+      "engines": 50,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD004",
+      "lead": 10,
+      "ratio": 10,
+      "policy": "optimal fixed interval T*",
+      "t_star": 118,
+      "cost_per_1000_cycles": 8.474576271186441,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 51.69048465527729
+    },
+    {
+      "subset": "FD004",
+      "lead": 10,
+      "ratio": 10,
+      "policy": "agent, current thresholds",
+      "t_star": 118,
+      "cost_per_1000_cycles": 4.477077363896848,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 89.45495551848015
+    },
+    {
+      "subset": "FD004",
+      "lead": 10,
+      "ratio": 10,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 118,
+      "cost_per_1000_cycles": 5.953423218350552,
+      "unplanned_failures": 2,
+      "engines": 50,
+      "life_used_pct": 91.58756015503144
+    },
+    {
+      "subset": "FD004",
+      "lead": 10,
+      "ratio": 20,
+      "policy": "reactive",
+      "t_star": 118,
+      "cost_per_1000_cycles": 79.88496564946477,
+      "unplanned_failures": 50,
+      "engines": 50,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD004",
+      "lead": 10,
+      "ratio": 20,
+      "policy": "optimal fixed interval T*",
+      "t_star": 118,
+      "cost_per_1000_cycles": 8.474576271186441,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 51.69048465527729
+    },
+    {
+      "subset": "FD004",
+      "lead": 10,
+      "ratio": 20,
+      "policy": "agent, current thresholds",
+      "t_star": 118,
+      "cost_per_1000_cycles": 4.477077363896848,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 89.45495551848015
+    },
+    {
+      "subset": "FD004",
+      "lead": 10,
+      "ratio": 20,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 118,
+      "cost_per_1000_cycles": 7.704430047277184,
+      "unplanned_failures": 2,
+      "engines": 50,
+      "life_used_pct": 91.58756015503144
+    },
+    {
+      "subset": "FD004",
+      "lead": 15,
+      "ratio": 3,
+      "policy": "reactive",
+      "t_star": 144,
+      "cost_per_1000_cycles": 11.982744847419715,
+      "unplanned_failures": 50,
+      "engines": 50,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD004",
+      "lead": 15,
+      "ratio": 3,
+      "policy": "optimal fixed interval T*",
+      "t_star": 144,
+      "cost_per_1000_cycles": 8.028792912513843,
+      "unplanned_failures": 4,
+      "engines": 50,
+      "life_used_pct": 63.07991347762653
+    },
+    {
+      "subset": "FD004",
+      "lead": 15,
+      "ratio": 3,
+      "policy": "agent, current thresholds",
+      "t_star": 144,
+      "cost_per_1000_cycles": 4.824443848834092,
+      "unplanned_failures": 2,
+      "engines": 50,
+      "life_used_pct": 89.45495551848015
+    },
+    {
+      "subset": "FD004",
+      "lead": 15,
+      "ratio": 3,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 144,
+      "cost_per_1000_cycles": 4.83005366726297,
+      "unplanned_failures": 2,
+      "engines": 50,
+      "life_used_pct": 89.40747723831952
+    },
+    {
+      "subset": "FD004",
+      "lead": 15,
+      "ratio": 5,
+      "policy": "reactive",
+      "t_star": 128,
+      "cost_per_1000_cycles": 19.971241412366194,
+      "unplanned_failures": 50,
+      "engines": 50,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD004",
+      "lead": 15,
+      "ratio": 5,
+      "policy": "optimal fixed interval T*",
+      "t_star": 128,
+      "cost_per_1000_cycles": 7.8125,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 56.071034202334715
+    },
+    {
+      "subset": "FD004",
+      "lead": 15,
+      "ratio": 5,
+      "policy": "agent, current thresholds",
+      "t_star": 128,
+      "cost_per_1000_cycles": 5.18181005985884,
+      "unplanned_failures": 2,
+      "engines": 50,
+      "life_used_pct": 89.45495551848015
+    },
+    {
+      "subset": "FD004",
+      "lead": 15,
+      "ratio": 5,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 128,
+      "cost_per_1000_cycles": 5.18783542039356,
+      "unplanned_failures": 2,
+      "engines": 50,
+      "life_used_pct": 89.40747723831952
+    },
+    {
+      "subset": "FD004",
+      "lead": 15,
+      "ratio": 10,
+      "policy": "reactive",
+      "t_star": 113,
+      "cost_per_1000_cycles": 39.94248282473239,
+      "unplanned_failures": 50,
+      "engines": 50,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD004",
+      "lead": 15,
+      "ratio": 10,
+      "policy": "optimal fixed interval T*",
+      "t_star": 113,
+      "cost_per_1000_cycles": 8.849557522123893,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 49.500209881748596
+    },
+    {
+      "subset": "FD004",
+      "lead": 15,
+      "ratio": 10,
+      "policy": "agent, current thresholds",
+      "t_star": 113,
+      "cost_per_1000_cycles": 6.075225587420709,
+      "unplanned_failures": 2,
+      "engines": 50,
+      "life_used_pct": 89.45495551848015
+    },
+    {
+      "subset": "FD004",
+      "lead": 15,
+      "ratio": 10,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 113,
+      "cost_per_1000_cycles": 6.082289803220036,
+      "unplanned_failures": 2,
+      "engines": 50,
+      "life_used_pct": 89.40747723831952
+    },
+    {
+      "subset": "FD004",
+      "lead": 15,
+      "ratio": 20,
+      "policy": "reactive",
+      "t_star": 113,
+      "cost_per_1000_cycles": 79.88496564946477,
+      "unplanned_failures": 50,
+      "engines": 50,
+      "life_used_pct": 100.0
+    },
+    {
+      "subset": "FD004",
+      "lead": 15,
+      "ratio": 20,
+      "policy": "optimal fixed interval T*",
+      "t_star": 113,
+      "cost_per_1000_cycles": 8.849557522123893,
+      "unplanned_failures": 0,
+      "engines": 50,
+      "life_used_pct": 49.500209881748596
+    },
+    {
+      "subset": "FD004",
+      "lead": 15,
+      "ratio": 20,
+      "policy": "agent, current thresholds",
+      "t_star": 113,
+      "cost_per_1000_cycles": 7.862056642544448,
+      "unplanned_failures": 2,
+      "engines": 50,
+      "life_used_pct": 89.45495551848015
+    },
+    {
+      "subset": "FD004",
+      "lead": 15,
+      "ratio": 20,
+      "policy": "agent, cost-tuned thresholds (2-fold CV)",
+      "t_star": 113,
+      "cost_per_1000_cycles": 7.8711985688729875,
+      "unplanned_failures": 2,
+      "engines": 50,
+      "life_used_pct": 89.40747723831952
+    }
+  ],
+  "recommended_thresholds": {
+    "FD001_lead0_ratio3": {
+      "high_rul": 20,
+      "critical_rul_lower": 5,
+      "safety_buffer": 0
+    },
+    "FD001_lead0_ratio5": {
+      "high_rul": 20,
+      "critical_rul_lower": 5,
+      "safety_buffer": 0
+    },
+    "FD001_lead0_ratio10": {
+      "high_rul": 20,
+      "critical_rul_lower": 5,
+      "safety_buffer": 0
+    },
+    "FD001_lead0_ratio20": {
+      "high_rul": 20,
+      "critical_rul_lower": 5,
+      "safety_buffer": 0
+    },
+    "FD001_lead10_ratio3": {
+      "high_rul": 20,
+      "critical_rul_lower": 10,
+      "safety_buffer": 0
+    },
+    "FD001_lead10_ratio5": {
+      "high_rul": 20,
+      "critical_rul_lower": 10,
+      "safety_buffer": 0
+    },
+    "FD001_lead10_ratio10": {
+      "high_rul": 20,
+      "critical_rul_lower": 10,
+      "safety_buffer": 0
+    },
+    "FD001_lead10_ratio20": {
+      "high_rul": 20,
+      "critical_rul_lower": 10,
+      "safety_buffer": 0
+    },
+    "FD001_lead15_ratio3": {
+      "high_rul": 20,
+      "critical_rul_lower": 15,
+      "safety_buffer": 0
+    },
+    "FD001_lead15_ratio5": {
+      "high_rul": 20,
+      "critical_rul_lower": 15,
+      "safety_buffer": 0
+    },
+    "FD001_lead15_ratio10": {
+      "high_rul": 20,
+      "critical_rul_lower": 15,
+      "safety_buffer": 0
+    },
+    "FD001_lead15_ratio20": {
+      "high_rul": 20,
+      "critical_rul_lower": 15,
+      "safety_buffer": 0
+    },
+    "FD002_lead0_ratio3": {
+      "high_rul": 20,
+      "critical_rul_lower": 5,
+      "safety_buffer": 0
+    },
+    "FD002_lead0_ratio5": {
+      "high_rul": 20,
+      "critical_rul_lower": 5,
+      "safety_buffer": 0
+    },
+    "FD002_lead0_ratio10": {
+      "high_rul": 20,
+      "critical_rul_lower": 5,
+      "safety_buffer": 0
+    },
+    "FD002_lead0_ratio20": {
+      "high_rul": 20,
+      "critical_rul_lower": 5,
+      "safety_buffer": 0
+    },
+    "FD002_lead10_ratio3": {
+      "high_rul": 20,
+      "critical_rul_lower": 10,
+      "safety_buffer": 10
+    },
+    "FD002_lead10_ratio5": {
+      "high_rul": 20,
+      "critical_rul_lower": 10,
+      "safety_buffer": 10
+    },
+    "FD002_lead10_ratio10": {
+      "high_rul": 20,
+      "critical_rul_lower": 10,
+      "safety_buffer": 10
+    },
+    "FD002_lead10_ratio20": {
+      "high_rul": 20,
+      "critical_rul_lower": 10,
+      "safety_buffer": 10
+    },
+    "FD002_lead15_ratio3": {
+      "high_rul": 50,
+      "critical_rul_lower": 15,
+      "safety_buffer": 5
+    },
+    "FD002_lead15_ratio5": {
+      "high_rul": 50,
+      "critical_rul_lower": 15,
+      "safety_buffer": 5
+    },
+    "FD002_lead15_ratio10": {
+      "high_rul": 50,
+      "critical_rul_lower": 15,
+      "safety_buffer": 5
+    },
+    "FD002_lead15_ratio20": {
+      "high_rul": 50,
+      "critical_rul_lower": 15,
+      "safety_buffer": 5
+    },
+    "FD003_lead0_ratio3": {
+      "high_rul": 20,
+      "critical_rul_lower": 5,
+      "safety_buffer": 0
+    },
+    "FD003_lead0_ratio5": {
+      "high_rul": 20,
+      "critical_rul_lower": 5,
+      "safety_buffer": 0
+    },
+    "FD003_lead0_ratio10": {
+      "high_rul": 20,
+      "critical_rul_lower": 5,
+      "safety_buffer": 0
+    },
+    "FD003_lead0_ratio20": {
+      "high_rul": 20,
+      "critical_rul_lower": 5,
+      "safety_buffer": 0
+    },
+    "FD003_lead10_ratio3": {
+      "high_rul": 20,
+      "critical_rul_lower": 10,
+      "safety_buffer": 0
+    },
+    "FD003_lead10_ratio5": {
+      "high_rul": 20,
+      "critical_rul_lower": 10,
+      "safety_buffer": 0
+    },
+    "FD003_lead10_ratio10": {
+      "high_rul": 20,
+      "critical_rul_lower": 10,
+      "safety_buffer": 0
+    },
+    "FD003_lead10_ratio20": {
+      "high_rul": 20,
+      "critical_rul_lower": 10,
+      "safety_buffer": 0
+    },
+    "FD003_lead15_ratio3": {
+      "high_rul": 35,
+      "critical_rul_lower": 15,
+      "safety_buffer": 5
+    },
+    "FD003_lead15_ratio5": {
+      "high_rul": 35,
+      "critical_rul_lower": 15,
+      "safety_buffer": 5
+    },
+    "FD003_lead15_ratio10": {
+      "high_rul": 35,
+      "critical_rul_lower": 15,
+      "safety_buffer": 5
+    },
+    "FD003_lead15_ratio20": {
+      "high_rul": 35,
+      "critical_rul_lower": 15,
+      "safety_buffer": 5
+    },
+    "FD004_lead0_ratio3": {
+      "high_rul": 20,
+      "critical_rul_lower": 5,
+      "safety_buffer": 0
+    },
+    "FD004_lead0_ratio5": {
+      "high_rul": 20,
+      "critical_rul_lower": 5,
+      "safety_buffer": 0
+    },
+    "FD004_lead0_ratio10": {
+      "high_rul": 20,
+      "critical_rul_lower": 5,
+      "safety_buffer": 0
+    },
+    "FD004_lead0_ratio20": {
+      "high_rul": 20,
+      "critical_rul_lower": 5,
+      "safety_buffer": 0
+    },
+    "FD004_lead10_ratio3": {
+      "high_rul": 30,
+      "critical_rul_lower": 5,
+      "safety_buffer": 10
+    },
+    "FD004_lead10_ratio5": {
+      "high_rul": 30,
+      "critical_rul_lower": 5,
+      "safety_buffer": 10
+    },
+    "FD004_lead10_ratio10": {
+      "high_rul": 30,
+      "critical_rul_lower": 5,
+      "safety_buffer": 10
+    },
+    "FD004_lead10_ratio20": {
+      "high_rul": 30,
+      "critical_rul_lower": 5,
+      "safety_buffer": 10
+    },
+    "FD004_lead15_ratio3": {
+      "high_rul": 30,
+      "critical_rul_lower": 10,
+      "safety_buffer": 15
+    },
+    "FD004_lead15_ratio5": {
+      "high_rul": 30,
+      "critical_rul_lower": 10,
+      "safety_buffer": 15
+    },
+    "FD004_lead15_ratio10": {
+      "high_rul": 30,
+      "critical_rul_lower": 10,
+      "safety_buffer": 15
+    },
+    "FD004_lead15_ratio20": {
+      "high_rul": 30,
+      "critical_rul_lower": 10,
+      "safety_buffer": 15
+    }
+  },
+  "grid": {
+    "high_rul": [
+      20,
+      25,
+      30,
+      35,
+      40,
+      50,
+      60
+    ],
+    "critical_rul_lower": [
+      5,
+      10,
+      15,
+      20,
+      25
+    ],
+    "safety_buffer": [
+      0,
+      5,
+      10,
+      15,
+      20
+    ]
+  },
+  "ratios": [
+    3,
+    5,
+    10,
+    20
+  ],
+  "lead_times": [
+    0,
+    10,
+    15
+  ]
+}

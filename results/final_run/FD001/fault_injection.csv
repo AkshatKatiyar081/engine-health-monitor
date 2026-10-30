@@ -1,0 +1,5 @@
+unit,injected,from_cycle,detected,first_flagged_cycle,gate_says,check_sensor_tickets,severity_clean_data,severity_faulty_data,rul_clean_data,rul_faulty_data,order_status,review_reasons
+62,s11 stuck,208,True,222,s11 stuck,1,MEDIUM,MEDIUM,55.4,57.2,OPEN,sensor fault: s11 stuck
+91,s4 out of range,230,True,231,s4 out of range,1,HIGH,HIGH,35.7,29.3,OPEN,sensor fault: s4 out of range
+93,s7 dead,225,True,238,s7 stuck,1,MEDIUM,MEDIUM,62.8,64.6,OPEN,recent sensor data was imputed; sensor fault: s7 stuck
+49,unseen operating condition (30 / 0.5 / 80),294,True,294,unseen operating condition,0,CRITICAL,CRITICAL,16.8,16.8,OPEN,operating condition not seen in training (nearest known condition used)

@@ -1,0 +1,408 @@
+{
+  "subset": "FD004",
+  "engines": 199,
+  "folds": 5,
+  "dl_config": {
+    "window": 30,
+    "epochs": 60,
+    "patience": 8,
+    "batch": 512,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "es_frac": 0.15,
+    "cap": 125,
+    "seeds": [
+      42,
+      1,
+      2
+    ]
+  },
+  "sensors": [
+    "s2",
+    "s3",
+    "s4",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s17",
+    "s20",
+    "s21"
+  ],
+  "device": "cuda",
+  "verdict": {
+    "best_non_tree_model": "hgb + gru",
+    "delta_vs_hgb_cycles": 0.462,
+    "folds_better": "0/5",
+    "adopt_as_challenger": false,
+    "decision": "keep gradient boosting: no deep model or blend is clearly better"
+  },
+  "cv": [
+    {
+      "model": "hgb",
+      "rmse_capped": 12.134,
+      "rmse_true": 26.852,
+      "rmse_true_rul_le_60": 8.446,
+      "nasa_capped_mean": 3.021,
+      "fold_std_rmse_capped": 1.196,
+      "delta_vs_hgb": 0.0,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "xgb",
+      "rmse_capped": 12.151,
+      "rmse_true": 26.943,
+      "rmse_true_rul_le_60": 8.615,
+      "nasa_capped_mean": 3.026,
+      "fold_std_rmse_capped": 1.221,
+      "delta_vs_hgb": 0.017,
+      "folds_better_than_hgb": "2/5"
+    },
+    {
+      "model": "cnn [seed 42]",
+      "rmse_capped": 17.375,
+      "rmse_true": 31.089,
+      "rmse_true_rul_le_60": 15.434,
+      "nasa_capped_mean": 7.589,
+      "fold_std_rmse_capped": 0.392,
+      "delta_vs_hgb": 5.24,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "cnn [seed 1]",
+      "rmse_capped": 17.299,
+      "rmse_true": 31.203,
+      "rmse_true_rul_le_60": 15.553,
+      "nasa_capped_mean": 7.386,
+      "fold_std_rmse_capped": 0.734,
+      "delta_vs_hgb": 5.164,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "cnn [seed 2]",
+      "rmse_capped": 17.501,
+      "rmse_true": 31.328,
+      "rmse_true_rul_le_60": 14.763,
+      "nasa_capped_mean": 7.25,
+      "fold_std_rmse_capped": 1.013,
+      "delta_vs_hgb": 5.367,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "cnn",
+      "rmse_capped": 16.929,
+      "rmse_true": 30.955,
+      "rmse_true_rul_le_60": 14.799,
+      "nasa_capped_mean": 6.61,
+      "fold_std_rmse_capped": 0.779,
+      "delta_vs_hgb": 4.795,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "gru [seed 42]",
+      "rmse_capped": 15.33,
+      "rmse_true": 29.064,
+      "rmse_true_rul_le_60": 12.065,
+      "nasa_capped_mean": 5.996,
+      "fold_std_rmse_capped": 0.59,
+      "delta_vs_hgb": 3.196,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "gru [seed 1]",
+      "rmse_capped": 15.968,
+      "rmse_true": 29.8,
+      "rmse_true_rul_le_60": 12.322,
+      "nasa_capped_mean": 6.577,
+      "fold_std_rmse_capped": 0.75,
+      "delta_vs_hgb": 3.834,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "gru [seed 2]",
+      "rmse_capped": 15.451,
+      "rmse_true": 29.242,
+      "rmse_true_rul_le_60": 11.882,
+      "nasa_capped_mean": 6.131,
+      "fold_std_rmse_capped": 0.673,
+      "delta_vs_hgb": 3.317,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "gru",
+      "rmse_capped": 15.252,
+      "rmse_true": 29.196,
+      "rmse_true_rul_le_60": 11.775,
+      "nasa_capped_mean": 5.721,
+      "fold_std_rmse_capped": 0.573,
+      "delta_vs_hgb": 3.118,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "tcn [seed 42]",
+      "rmse_capped": 16.879,
+      "rmse_true": 30.871,
+      "rmse_true_rul_le_60": 14.81,
+      "nasa_capped_mean": 6.682,
+      "fold_std_rmse_capped": 0.645,
+      "delta_vs_hgb": 4.745,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "tcn [seed 1]",
+      "rmse_capped": 17.409,
+      "rmse_true": 31.308,
+      "rmse_true_rul_le_60": 14.896,
+      "nasa_capped_mean": 7.721,
+      "fold_std_rmse_capped": 0.454,
+      "delta_vs_hgb": 5.275,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "tcn [seed 2]",
+      "rmse_capped": 17.667,
+      "rmse_true": 31.031,
+      "rmse_true_rul_le_60": 15.294,
+      "nasa_capped_mean": 8.353,
+      "fold_std_rmse_capped": 0.477,
+      "delta_vs_hgb": 5.533,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "tcn",
+      "rmse_capped": 16.755,
+      "rmse_true": 30.76,
+      "rmse_true_rul_le_60": 14.406,
+      "nasa_capped_mean": 6.611,
+      "fold_std_rmse_capped": 0.541,
+      "delta_vs_hgb": 4.621,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "hgb + cnn",
+      "rmse_capped": 13.231,
+      "rmse_true": 28.244,
+      "rmse_true_rul_le_60": 10.283,
+      "nasa_capped_mean": 3.2,
+      "fold_std_rmse_capped": 1.045,
+      "delta_vs_hgb": 1.097,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "hgb + gru",
+      "rmse_capped": 12.596,
+      "rmse_true": 27.488,
+      "rmse_true_rul_le_60": 9.113,
+      "nasa_capped_mean": 3.287,
+      "fold_std_rmse_capped": 1.07,
+      "delta_vs_hgb": 0.462,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "hgb + tcn",
+      "rmse_capped": 13.149,
+      "rmse_true": 28.152,
+      "rmse_true_rul_le_60": 10.127,
+      "nasa_capped_mean": 3.199,
+      "fold_std_rmse_capped": 1.007,
+      "delta_vs_hgb": 1.015,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "cnn + gru + tcn",
+      "rmse_capped": 15.706,
+      "rmse_true": 29.984,
+      "rmse_true_rul_le_60": 12.946,
+      "nasa_capped_mean": 5.235,
+      "fold_std_rmse_capped": 0.712,
+      "delta_vs_hgb": 3.572,
+      "folds_better_than_hgb": "0/5"
+    },
+    {
+      "model": "hgb + cnn + gru + tcn",
+      "rmse_capped": 12.801,
+      "rmse_true": 27.874,
+      "rmse_true_rul_le_60": 9.59,
+      "nasa_capped_mean": 3.054,
+      "fold_std_rmse_capped": 1.064,
+      "delta_vs_hgb": 0.667,
+      "folds_better_than_hgb": "0/5"
+    }
+  ],
+  "test": [
+    {
+      "model": "hgb",
+      "test_rmse_capped": 10.959,
+      "test_rmse": 23.684,
+      "test_nasa_score": 3237.868,
+      "test_nasa_capped_mean": 2.474
+    },
+    {
+      "model": "xgb",
+      "test_rmse_capped": 11.061,
+      "test_rmse": 23.844,
+      "test_nasa_score": 3306.601,
+      "test_nasa_capped_mean": 2.453
+    },
+    {
+      "model": "cnn [seed 42]",
+      "test_rmse_capped": 16.34,
+      "test_rmse": 28.321,
+      "test_nasa_score": 5860.526,
+      "test_nasa_capped_mean": 5.047
+    },
+    {
+      "model": "cnn [seed 1]",
+      "test_rmse_capped": 15.816,
+      "test_rmse": 28.05,
+      "test_nasa_score": 5974.545,
+      "test_nasa_capped_mean": 4.856
+    },
+    {
+      "model": "cnn [seed 2]",
+      "test_rmse_capped": 15.203,
+      "test_rmse": 27.593,
+      "test_nasa_score": 6766.852,
+      "test_nasa_capped_mean": 4.516
+    },
+    {
+      "model": "cnn",
+      "test_rmse_capped": 15.414,
+      "test_rmse": 27.777,
+      "test_nasa_score": 5899.979,
+      "test_nasa_capped_mean": 4.458
+    },
+    {
+      "model": "gru [seed 42]",
+      "test_rmse_capped": 12.861,
+      "test_rmse": 25.591,
+      "test_nasa_score": 5381.495,
+      "test_nasa_capped_mean": 3.016
+    },
+    {
+      "model": "gru [seed 1]",
+      "test_rmse_capped": 12.891,
+      "test_rmse": 25.859,
+      "test_nasa_score": 4516.121,
+      "test_nasa_capped_mean": 3.277
+    },
+    {
+      "model": "gru [seed 2]",
+      "test_rmse_capped": 12.887,
+      "test_rmse": 25.093,
+      "test_nasa_score": 4189.119,
+      "test_nasa_capped_mean": 3.376
+    },
+    {
+      "model": "gru",
+      "test_rmse_capped": 12.623,
+      "test_rmse": 25.388,
+      "test_nasa_score": 4495.777,
+      "test_nasa_capped_mean": 3.044
+    },
+    {
+      "model": "tcn [seed 42]",
+      "test_rmse_capped": 15.05,
+      "test_rmse": 27.289,
+      "test_nasa_score": 5232.151,
+      "test_nasa_capped_mean": 4.098
+    },
+    {
+      "model": "tcn [seed 1]",
+      "test_rmse_capped": 14.427,
+      "test_rmse": 26.482,
+      "test_nasa_score": 4750.011,
+      "test_nasa_capped_mean": 3.83
+    },
+    {
+      "model": "tcn [seed 2]",
+      "test_rmse_capped": 14.758,
+      "test_rmse": 27.927,
+      "test_nasa_score": 7457.814,
+      "test_nasa_capped_mean": 3.709
+    },
+    {
+      "model": "tcn",
+      "test_rmse_capped": 14.157,
+      "test_rmse": 26.924,
+      "test_nasa_score": 5375.428,
+      "test_nasa_capped_mean": 3.521
+    },
+    {
+      "model": "hgb + cnn",
+      "test_rmse_capped": 11.95,
+      "test_rmse": 25.104,
+      "test_nasa_score": 4015.555,
+      "test_nasa_capped_mean": 2.637
+    },
+    {
+      "model": "hgb + gru",
+      "test_rmse_capped": 10.895,
+      "test_rmse": 24.119,
+      "test_nasa_score": 3613.532,
+      "test_nasa_capped_mean": 2.378
+    },
+    {
+      "model": "hgb + tcn",
+      "test_rmse_capped": 11.438,
+      "test_rmse": 24.768,
+      "test_nasa_score": 3894.113,
+      "test_nasa_capped_mean": 2.459
+    },
+    {
+      "model": "cnn + gru + tcn",
+      "test_rmse_capped": 13.527,
+      "test_rmse": 26.411,
+      "test_nasa_score": 5061.858,
+      "test_nasa_capped_mean": 3.269
+    },
+    {
+      "model": "hgb + cnn + gru + tcn",
+      "test_rmse_capped": 11.258,
+      "test_rmse": 24.585,
+      "test_nasa_score": 3809.545,
+      "test_nasa_capped_mean": 2.426
+    }
+  ],
+  "seed_spread": [
+    {
+      "net": "cnn",
+      "cv_single_seed_mean": 17.392,
+      "cv_single_seed_std": 0.102,
+      "cv_single_seed_range": 0.202,
+      "cv_seed_ensemble": 16.929,
+      "cv_single_seed_delta_vs_hgb_mean": 5.257,
+      "test_single_seed_mean": 15.786,
+      "test_single_seed_range": 1.137,
+      "test_seed_ensemble": 15.414
+    },
+    {
+      "net": "gru",
+      "cv_single_seed_mean": 15.583,
+      "cv_single_seed_std": 0.339,
+      "cv_single_seed_range": 0.638,
+      "cv_seed_ensemble": 15.252,
+      "cv_single_seed_delta_vs_hgb_mean": 3.449,
+      "test_single_seed_mean": 12.88,
+      "test_single_seed_range": 0.03,
+      "test_seed_ensemble": 12.623
+    },
+    {
+      "net": "tcn",
+      "cv_single_seed_mean": 17.318,
+      "cv_single_seed_std": 0.402,
+      "cv_single_seed_range": 0.788,
+      "cv_seed_ensemble": 16.755,
+      "cv_single_seed_delta_vs_hgb_mean": 5.184,
+      "test_single_seed_mean": 14.745,
+      "test_single_seed_range": 0.623,
+      "test_seed_ensemble": 14.157
+    }
+  ]
+}

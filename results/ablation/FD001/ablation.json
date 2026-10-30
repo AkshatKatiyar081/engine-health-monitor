@@ -1,0 +1,146 @@
+{
+  "subset": "FD001",
+  "engines": 80,
+  "folds": 5,
+  "base_model": "hgb",
+  "eval_cap": 125,
+  "variants": [
+    {
+      "variant": "baseline (current design)",
+      "rmse_capped": 10.233,
+      "rmse_true": 22.791,
+      "rmse_true_rul_le_60": 6.4,
+      "nasa_capped_mean": 1.663,
+      "fold_std_rmse_capped": 0.791,
+      "delta_vs_baseline": 0.0,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "raw sensors only (no rolling features)",
+      "rmse_capped": 19.105,
+      "rmse_true": 29.777,
+      "rmse_true_rul_le_60": 17.555,
+      "nasa_capped_mean": 9.07,
+      "fold_std_rmse_capped": 1.3,
+      "delta_vs_baseline": 8.857,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "no trend (slope) features",
+      "rmse_capped": 10.252,
+      "rmse_true": 22.795,
+      "rmse_true_rul_le_60": 6.291,
+      "nasa_capped_mean": 1.667,
+      "fold_std_rmse_capped": 0.891,
+      "delta_vs_baseline": 0.013,
+      "folds_better_than_baseline": "2/5"
+    },
+    {
+      "variant": "no drift-from-own-baseline",
+      "rmse_capped": 15.801,
+      "rmse_true": 27.345,
+      "rmse_true_rul_le_60": 11.62,
+      "nasa_capped_mean": 4.837,
+      "fold_std_rmse_capped": 1.263,
+      "delta_vs_baseline": 5.546,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "no cycle count",
+      "rmse_capped": 14.28,
+      "rmse_true": 25.435,
+      "rmse_true_rul_le_60": 10.152,
+      "nasa_capped_mean": 3.502,
+      "fold_std_rmse_capped": 0.828,
+      "delta_vs_baseline": 4.053,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "shorter windows (5 / 10 / 5)",
+      "rmse_capped": 10.333,
+      "rmse_true": 22.873,
+      "rmse_true_rul_le_60": 6.337,
+      "nasa_capped_mean": 1.706,
+      "fold_std_rmse_capped": 0.691,
+      "delta_vs_baseline": 0.105,
+      "folds_better_than_baseline": "1/5"
+    },
+    {
+      "variant": "longer windows (30 / 50 / 30)",
+      "rmse_capped": 10.694,
+      "rmse_true": 23.165,
+      "rmse_true_rul_le_60": 6.425,
+      "nasa_capped_mean": 1.851,
+      "fold_std_rmse_capped": 1.136,
+      "delta_vs_baseline": 0.438,
+      "folds_better_than_baseline": "1/5"
+    },
+    {
+      "variant": "RUL cap 110",
+      "rmse_capped": 12.438,
+      "rmse_true": 27.559,
+      "rmse_true_rul_le_60": 6.031,
+      "nasa_capped_mean": 1.838,
+      "fold_std_rmse_capped": 0.414,
+      "delta_vs_baseline": 2.222,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "RUL cap 140",
+      "rmse_capped": 11.959,
+      "rmse_true": 19.981,
+      "rmse_true_rul_le_60": 6.462,
+      "nasa_capped_mean": 2.664,
+      "fold_std_rmse_capped": 0.989,
+      "delta_vs_baseline": 1.718,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "no RUL cap",
+      "rmse_capped": 24.497,
+      "rmse_true": 22.32,
+      "rmse_true_rul_le_60": 6.806,
+      "nasa_capped_mean": 341.089,
+      "fold_std_rmse_capped": 1.187,
+      "delta_vs_baseline": 14.262,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "model: Ridge (linear)",
+      "rmse_capped": 17.39,
+      "rmse_true": 28.817,
+      "rmse_true_rul_le_60": 18.501,
+      "nasa_capped_mean": 5.427,
+      "fold_std_rmse_capped": 0.408,
+      "delta_vs_baseline": 7.176,
+      "folds_better_than_baseline": "0/5"
+    },
+    {
+      "variant": "model: XGBoost",
+      "rmse_capped": 10.24,
+      "rmse_true": 22.896,
+      "rmse_true_rul_le_60": 6.339,
+      "nasa_capped_mean": 1.656,
+      "fold_std_rmse_capped": 0.822,
+      "delta_vs_baseline": 0.004,
+      "folds_better_than_baseline": "2/5"
+    },
+    {
+      "variant": "model: HistGB + XGBoost average",
+      "rmse_capped": 10.139,
+      "rmse_true": 22.794,
+      "rmse_true_rul_le_60": 6.276,
+      "nasa_capped_mean": 1.63,
+      "fold_std_rmse_capped": 0.81,
+      "delta_vs_baseline": -0.096,
+      "folds_better_than_baseline": "4/5"
+    }
+  ],
+  "calibration": {
+    "coverage_raw_quantiles": 0.614,
+    "coverage_calibrated": 0.801,
+    "coverage_raw_rul_le_30": 0.629,
+    "coverage_calibrated_rul_le_30": 0.943,
+    "target": 0.8
+  }
+}

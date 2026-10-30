@@ -1,0 +1,217 @@
+,,stage,model,best_epoch,epochs_run,early_stop_rmse_capped,seconds,params
+FD001,0,cv fold 0,cnn [seed 42],4,12,15.886,3.1,33409
+FD001,1,cv fold 0,cnn [seed 1],10,18,16.132,1.6,33409
+FD001,2,cv fold 0,cnn [seed 2],8,16,16.992,1.4,33409
+FD001,3,cv fold 0,gru [seed 42],13,21,14.222,2.7,42625
+FD001,4,cv fold 0,gru [seed 1],22,30,14.63,3.5,42625
+FD001,5,cv fold 0,gru [seed 2],12,20,14.528,2.3,42625
+FD001,6,cv fold 0,tcn [seed 42],5,13,16.831,2.8,90497
+FD001,7,cv fold 0,tcn [seed 1],10,18,16.305,3.8,90497
+FD001,8,cv fold 0,tcn [seed 2],14,22,16.034,4.7,90497
+FD001,9,cv fold 1,cnn [seed 42],40,48,13.665,4.3,33409
+FD001,10,cv fold 1,cnn [seed 1],20,28,14.14,2.5,33409
+FD001,11,cv fold 1,cnn [seed 2],18,26,13.269,2.3,33409
+FD001,12,cv fold 1,gru [seed 42],26,34,11.475,3.9,42625
+FD001,13,cv fold 1,gru [seed 1],22,30,11.633,3.5,42625
+FD001,14,cv fold 1,gru [seed 2],15,23,11.61,2.6,42625
+FD001,15,cv fold 1,tcn [seed 42],13,21,14.128,4.4,90497
+FD001,16,cv fold 1,tcn [seed 1],14,22,14.095,4.6,90497
+FD001,17,cv fold 1,tcn [seed 2],9,17,14.233,3.5,90497
+FD001,18,cv fold 2,cnn [seed 42],19,27,15.552,2.5,33409
+FD001,19,cv fold 2,cnn [seed 1],14,22,14.665,2.1,33409
+FD001,20,cv fold 2,cnn [seed 2],30,38,15.787,3.4,33409
+FD001,21,cv fold 2,gru [seed 42],13,21,13.579,2.5,42625
+FD001,22,cv fold 2,gru [seed 1],14,22,13.608,2.6,42625
+FD001,23,cv fold 2,gru [seed 2],11,19,13.72,2.3,42625
+FD001,24,cv fold 2,tcn [seed 42],10,18,16.583,3.9,90497
+FD001,25,cv fold 2,tcn [seed 1],9,17,16.394,3.7,90497
+FD001,26,cv fold 2,tcn [seed 2],14,22,16.55,4.8,90497
+FD001,27,cv fold 3,cnn [seed 42],8,16,13.795,1.5,33409
+FD001,28,cv fold 3,cnn [seed 1],3,11,13.938,1.0,33409
+FD001,29,cv fold 3,cnn [seed 2],25,33,13.718,3.0,33409
+FD001,30,cv fold 3,gru [seed 42],3,11,13.092,1.3,42625
+FD001,31,cv fold 3,gru [seed 1],3,11,12.965,1.3,42625
+FD001,32,cv fold 3,gru [seed 2],3,11,13.233,1.3,42625
+FD001,33,cv fold 3,tcn [seed 42],16,24,13.146,5.2,90497
+FD001,34,cv fold 3,tcn [seed 1],8,16,13.458,3.5,90497
+FD001,35,cv fold 3,tcn [seed 2],25,33,12.748,7.2,90497
+FD001,36,cv fold 4,cnn [seed 42],17,25,15.313,2.3,33409
+FD001,37,cv fold 4,cnn [seed 1],19,27,16.131,2.5,33409
+FD001,38,cv fold 4,cnn [seed 2],23,31,14.651,2.9,33409
+FD001,39,cv fold 4,gru [seed 42],22,30,13.773,3.6,42625
+FD001,40,cv fold 4,gru [seed 1],19,27,13.693,3.3,42625
+FD001,41,cv fold 4,gru [seed 2],20,28,13.515,3.4,42625
+FD001,42,cv fold 4,tcn [seed 42],17,25,16.34,5.5,90497
+FD001,43,cv fold 4,tcn [seed 1],21,29,14.881,6.4,90497
+FD001,44,cv fold 4,tcn [seed 2],15,23,15.394,5.1,90497
+FD001,45,test fit,cnn [seed 42],14,22,13.53,2.9,33409
+FD001,46,test fit,cnn [seed 1],18,26,13.461,3.4,33409
+FD001,47,test fit,cnn [seed 2],15,23,13.553,3.1,33409
+FD001,48,test fit,gru [seed 42],15,23,11.883,4.1,42625
+FD001,49,test fit,gru [seed 1],18,26,12.019,4.6,42625
+FD001,50,test fit,gru [seed 2],13,21,11.983,3.8,42625
+FD001,51,test fit,tcn [seed 42],15,23,13.162,7.4,90497
+FD001,52,test fit,tcn [seed 1],23,31,13.063,10.1,90497
+FD001,53,test fit,tcn [seed 2],15,23,13.211,7.5,90497
+FD002,0,cv fold 0,cnn [seed 42],13,21,17.949,4.8,33409
+FD002,1,cv fold 0,cnn [seed 1],12,20,18.16,4.6,33409
+FD002,2,cv fold 0,cnn [seed 2],10,18,18.184,4.2,33409
+FD002,3,cv fold 0,gru [seed 42],11,19,16.272,5.9,42625
+FD002,4,cv fold 0,gru [seed 1],8,16,16.5,5.0,42625
+FD002,5,cv fold 0,gru [seed 2],10,18,16.423,5.6,42625
+FD002,6,cv fold 0,tcn [seed 42],8,16,17.748,9.2,90497
+FD002,7,cv fold 0,tcn [seed 1],6,14,17.746,8.1,90497
+FD002,8,cv fold 0,tcn [seed 2],8,16,17.604,9.1,90497
+FD002,9,cv fold 1,cnn [seed 42],13,21,17.983,4.8,33409
+FD002,10,cv fold 1,cnn [seed 1],14,22,17.849,5.0,33409
+FD002,11,cv fold 1,cnn [seed 2],8,16,17.449,3.6,33409
+FD002,12,cv fold 1,gru [seed 42],6,14,17.089,4.2,42625
+FD002,13,cv fold 1,gru [seed 1],7,15,17.859,4.6,42625
+FD002,14,cv fold 1,gru [seed 2],5,13,17.222,4.0,42625
+FD002,15,cv fold 1,tcn [seed 42],8,16,17.986,9.0,90497
+FD002,16,cv fold 1,tcn [seed 1],9,17,17.594,9.6,90497
+FD002,17,cv fold 1,tcn [seed 2],4,12,17.985,6.8,90497
+FD002,18,cv fold 2,cnn [seed 42],10,18,15.685,4.2,33409
+FD002,19,cv fold 2,cnn [seed 1],6,14,15.381,3.2,33409
+FD002,20,cv fold 2,cnn [seed 2],14,22,15.191,5.0,33409
+FD002,21,cv fold 2,gru [seed 42],6,14,14.326,4.4,42625
+FD002,22,cv fold 2,gru [seed 1],6,14,13.694,4.4,42625
+FD002,23,cv fold 2,gru [seed 2],5,13,13.999,4.1,42625
+FD002,24,cv fold 2,tcn [seed 42],8,16,15.348,9.2,90497
+FD002,25,cv fold 2,tcn [seed 1],5,13,15.321,7.4,90497
+FD002,26,cv fold 2,tcn [seed 2],6,14,15.243,8.0,90497
+FD002,27,cv fold 3,cnn [seed 42],13,21,14.375,4.8,33409
+FD002,28,cv fold 3,cnn [seed 1],8,16,13.915,3.7,33409
+FD002,29,cv fold 3,cnn [seed 2],11,19,12.989,4.3,33409
+FD002,30,cv fold 3,gru [seed 42],10,18,12.974,5.6,42625
+FD002,31,cv fold 3,gru [seed 1],8,16,12.955,5.0,42625
+FD002,32,cv fold 3,gru [seed 2],11,19,12.611,5.9,42625
+FD002,33,cv fold 3,tcn [seed 42],10,18,14.319,10.2,90497
+FD002,34,cv fold 3,tcn [seed 1],8,16,14.055,9.0,90497
+FD002,35,cv fold 3,tcn [seed 2],8,16,14.253,9.0,90497
+FD002,36,cv fold 4,cnn [seed 42],7,15,16.145,3.8,33409
+FD002,37,cv fold 4,cnn [seed 1],4,12,16.412,2.8,33409
+FD002,38,cv fold 4,cnn [seed 2],8,16,16.548,3.6,33409
+FD002,39,cv fold 4,gru [seed 42],6,14,15.042,4.3,42625
+FD002,40,cv fold 4,gru [seed 1],5,13,15.503,4.0,42625
+FD002,41,cv fold 4,gru [seed 2],4,12,15.32,3.7,42625
+FD002,42,cv fold 4,tcn [seed 42],4,12,16.593,6.8,90497
+FD002,43,cv fold 4,tcn [seed 1],4,12,16.79,6.8,90497
+FD002,44,cv fold 4,tcn [seed 2],4,12,16.633,6.8,90497
+FD002,45,test fit,cnn [seed 42],8,16,16.946,5.5,33409
+FD002,46,test fit,cnn [seed 1],7,15,16.89,5.1,33409
+FD002,47,test fit,cnn [seed 2],6,14,16.462,4.8,33409
+FD002,48,test fit,gru [seed 42],8,16,14.903,7.5,42625
+FD002,49,test fit,gru [seed 1],9,17,15.022,8.0,42625
+FD002,50,test fit,gru [seed 2],10,18,15.056,8.5,42625
+FD002,51,test fit,tcn [seed 42],7,15,16.046,12.8,90497
+FD002,52,test fit,tcn [seed 1],6,14,16.045,11.9,90497
+FD002,53,test fit,tcn [seed 2],7,15,15.899,12.6,90497
+FD003,0,cv fold 0,cnn [seed 42],6,14,18.739,1.6,33729
+FD003,1,cv fold 0,cnn [seed 1],19,27,16.862,3.0,33729
+FD003,2,cv fold 0,cnn [seed 2],14,22,17.931,2.4,33729
+FD003,3,cv fold 0,gru [seed 42],27,35,12.033,5.2,43009
+FD003,4,cv fold 0,gru [seed 1],25,33,13.031,4.9,43009
+FD003,5,cv fold 0,gru [seed 2],21,29,12.929,4.4,43009
+FD003,6,cv fold 0,tcn [seed 42],21,29,15.467,7.9,91009
+FD003,7,cv fold 0,tcn [seed 1],13,21,16.546,5.8,91009
+FD003,8,cv fold 0,tcn [seed 2],14,22,14.715,6.1,91009
+FD003,9,cv fold 1,cnn [seed 42],4,12,16.186,1.3,33729
+FD003,10,cv fold 1,cnn [seed 1],4,12,15.58,1.3,33729
+FD003,11,cv fold 1,cnn [seed 2],4,12,14.696,1.3,33729
+FD003,12,cv fold 1,gru [seed 42],5,13,14.166,1.9,43009
+FD003,13,cv fold 1,gru [seed 1],7,15,14.216,2.2,43009
+FD003,14,cv fold 1,gru [seed 2],17,25,13.562,3.6,43009
+FD003,15,cv fold 1,tcn [seed 42],5,13,16.124,3.4,91009
+FD003,16,cv fold 1,tcn [seed 1],2,10,15.882,2.6,91009
+FD003,17,cv fold 1,tcn [seed 2],6,14,15.618,3.7,91009
+FD003,18,cv fold 2,cnn [seed 42],26,34,18.476,3.7,33729
+FD003,19,cv fold 2,cnn [seed 1],29,37,17.802,3.9,33729
+FD003,20,cv fold 2,cnn [seed 2],15,23,17.794,2.4,33729
+FD003,21,cv fold 2,gru [seed 42],23,31,14.573,4.5,43009
+FD003,22,cv fold 2,gru [seed 1],26,34,14.325,5.0,43009
+FD003,23,cv fold 2,gru [seed 2],23,31,13.935,4.6,43009
+FD003,24,cv fold 2,tcn [seed 42],15,23,18.8,6.2,91009
+FD003,25,cv fold 2,tcn [seed 1],9,17,18.367,4.5,91009
+FD003,26,cv fold 2,tcn [seed 2],22,30,18.186,8.0,91009
+FD003,27,cv fold 3,cnn [seed 42],27,35,11.363,3.7,33729
+FD003,28,cv fold 3,cnn [seed 1],21,29,13.385,3.0,33729
+FD003,29,cv fold 3,cnn [seed 2],18,26,10.962,2.7,33729
+FD003,30,cv fold 3,gru [seed 42],15,23,11.027,3.2,43009
+FD003,31,cv fold 3,gru [seed 1],27,35,10.274,4.9,43009
+FD003,32,cv fold 3,gru [seed 2],36,44,10.788,6.2,43009
+FD003,33,cv fold 3,tcn [seed 42],8,16,13.753,4.1,91009
+FD003,34,cv fold 3,tcn [seed 1],10,18,13.932,4.6,91009
+FD003,35,cv fold 3,tcn [seed 2],24,32,13.14,8.1,91009
+FD003,36,cv fold 4,cnn [seed 42],18,26,11.902,2.6,33729
+FD003,37,cv fold 4,cnn [seed 1],30,38,12.212,3.8,33729
+FD003,38,cv fold 4,cnn [seed 2],20,28,11.799,2.9,33729
+FD003,39,cv fold 4,gru [seed 42],19,27,11.129,3.9,43009
+FD003,40,cv fold 4,gru [seed 1],22,30,10.905,4.3,43009
+FD003,41,cv fold 4,gru [seed 2],20,28,10.999,4.1,43009
+FD003,42,cv fold 4,tcn [seed 42],20,28,12.466,7.4,91009
+FD003,43,cv fold 4,tcn [seed 1],21,29,12.251,7.6,91009
+FD003,44,cv fold 4,tcn [seed 2],14,22,12.056,5.8,91009
+FD003,45,test fit,cnn [seed 42],19,27,11.93,4.3,33729
+FD003,46,test fit,cnn [seed 1],14,22,12.692,3.5,33729
+FD003,47,test fit,cnn [seed 2],28,36,12.139,5.6,33729
+FD003,48,test fit,gru [seed 42],16,24,11.224,5.3,43009
+FD003,49,test fit,gru [seed 1],16,24,11.061,5.3,43009
+FD003,50,test fit,gru [seed 2],14,22,11.045,4.9,43009
+FD003,51,test fit,tcn [seed 42],16,24,12.197,9.5,91009
+FD003,52,test fit,tcn [seed 1],14,22,12.372,8.7,91009
+FD003,53,test fit,tcn [seed 2],13,21,12.303,8.3,91009
+FD004,0,cv fold 0,cnn [seed 42],13,21,20.156,5.4,33729
+FD004,1,cv fold 0,cnn [seed 1],11,19,19.69,4.9,33729
+FD004,2,cv fold 0,cnn [seed 2],8,16,20.145,4.1,33729
+FD004,3,cv fold 0,gru [seed 42],14,22,15.833,7.8,43009
+FD004,4,cv fold 0,gru [seed 1],13,21,16.375,7.6,43009
+FD004,5,cv fold 0,gru [seed 2],14,22,16.163,8.0,43009
+FD004,6,cv fold 0,tcn [seed 42],13,21,19.413,13.7,91009
+FD004,7,cv fold 0,tcn [seed 1],16,24,19.219,15.5,91009
+FD004,8,cv fold 0,tcn [seed 2],10,18,19.065,11.5,91009
+FD004,9,cv fold 1,cnn [seed 42],9,17,15.624,4.4,33729
+FD004,10,cv fold 1,cnn [seed 1],8,16,16.202,4.1,33729
+FD004,11,cv fold 1,cnn [seed 2],7,15,15.709,3.8,33729
+FD004,12,cv fold 1,gru [seed 42],19,27,13.861,9.5,43009
+FD004,13,cv fold 1,gru [seed 1],10,18,14.277,6.4,43009
+FD004,14,cv fold 1,gru [seed 2],11,19,14.253,6.8,43009
+FD004,15,cv fold 1,tcn [seed 42],11,19,15.757,12.3,91009
+FD004,16,cv fold 1,tcn [seed 1],11,19,15.538,12.1,91009
+FD004,17,cv fold 1,tcn [seed 2],13,21,15.629,13.3,91009
+FD004,18,cv fold 2,cnn [seed 42],16,24,13.715,6.2,33729
+FD004,19,cv fold 2,cnn [seed 1],14,22,14.919,5.8,33729
+FD004,20,cv fold 2,cnn [seed 2],8,16,14.578,4.2,33729
+FD004,21,cv fold 2,gru [seed 42],11,19,12.62,6.8,43009
+FD004,22,cv fold 2,gru [seed 1],8,16,12.862,5.8,43009
+FD004,23,cv fold 2,gru [seed 2],14,22,12.464,8.0,43009
+FD004,24,cv fold 2,tcn [seed 42],8,16,14.173,10.4,91009
+FD004,25,cv fold 2,tcn [seed 1],8,16,14.436,10.3,91009
+FD004,26,cv fold 2,tcn [seed 2],6,14,14.6,9.0,91009
+FD004,27,cv fold 3,cnn [seed 42],18,26,15.562,6.6,33729
+FD004,28,cv fold 3,cnn [seed 1],12,20,15.978,5.1,33729
+FD004,29,cv fold 3,cnn [seed 2],14,22,15.272,5.7,33729
+FD004,30,cv fold 3,gru [seed 42],14,22,13.936,7.8,43009
+FD004,31,cv fold 3,gru [seed 1],17,25,14.099,8.9,43009
+FD004,32,cv fold 3,gru [seed 2],19,27,13.978,9.6,43009
+FD004,33,cv fold 3,tcn [seed 42],8,16,15.399,10.3,91009
+FD004,34,cv fold 3,tcn [seed 1],17,25,14.853,15.9,91009
+FD004,35,cv fold 3,tcn [seed 2],14,22,15.002,13.9,91009
+FD004,36,cv fold 4,cnn [seed 42],8,16,14.71,4.1,33729
+FD004,37,cv fold 4,cnn [seed 1],14,22,15.184,5.7,33729
+FD004,38,cv fold 4,cnn [seed 2],16,24,14.316,6.3,33729
+FD004,39,cv fold 4,gru [seed 42],17,25,12.651,9.0,43009
+FD004,40,cv fold 4,gru [seed 1],10,18,13.56,6.5,43009
+FD004,41,cv fold 4,gru [seed 2],22,30,12.135,10.8,43009
+FD004,42,cv fold 4,tcn [seed 42],12,20,15.722,13.0,91009
+FD004,43,cv fold 4,tcn [seed 1],13,21,15.19,13.5,91009
+FD004,44,cv fold 4,tcn [seed 2],14,22,14.408,14.1,91009
+FD004,45,test fit,cnn [seed 42],10,18,16.282,6.9,33729
+FD004,46,test fit,cnn [seed 1],11,19,16.342,7.1,33729
+FD004,47,test fit,cnn [seed 2],11,19,16.487,7.0,33729
+FD004,48,test fit,gru [seed 42],10,18,14.844,9.6,43009
+FD004,49,test fit,gru [seed 1],10,18,14.982,9.6,43009
+FD004,50,test fit,gru [seed 2],11,19,15.134,10.1,43009
+FD004,51,test fit,tcn [seed 42],7,15,15.81,14.3,91009
+FD004,52,test fit,tcn [seed 1],11,19,15.663,18.0,91009
+FD004,53,test fit,tcn [seed 2],11,19,15.749,18.1,91009

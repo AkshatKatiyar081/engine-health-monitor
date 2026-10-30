@@ -1,0 +1,6 @@
+,FD001,FD002,FD003,FD004
+coverage_raw_quantiles,0.614,0.687,0.574,0.707
+coverage_calibrated,0.801,0.802,0.8,0.803
+coverage_raw_rul_le_30,0.629,0.701,0.606,0.744
+coverage_calibrated_rul_le_30,0.943,0.912,0.962,0.915
+target,0.8,0.8,0.8,0.8

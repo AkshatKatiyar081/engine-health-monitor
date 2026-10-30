@@ -1,0 +1,15 @@
+variant,rmse_capped,rmse_true,rmse_true_rul_le_60,nasa_capped_mean,fold_std_rmse_capped,delta_vs_baseline,folds_better_than_baseline
+baseline (current design),12.179,26.858,8.474,3.021,1.196,0.0,0/5
+raw sensors only (no rolling features),18.546,31.858,17.227,9.677,1.024,6.391,0/5
+no trend (slope) features,12.134,26.864,8.362,2.94,1.154,-0.042,3/5
+no drift-from-own-baseline,16.617,30.316,14.24,6.58,0.914,4.466,0/5
+no cycle count,15.769,29.039,12.599,5.816,1.339,3.589,0/5
+shorter windows (5 / 10 / 5),12.309,27.016,8.716,3.207,1.235,0.128,1/5
+longer windows (30 / 50 / 30),12.356,26.877,9.088,3.072,1.119,0.183,1/5
+RUL cap 110,14.457,32.299,8.301,2.98,0.999,2.298,0/5
+RUL cap 140,13.943,23.165,8.512,4.656,1.019,1.781,0/5
+no RUL cap,36.148,28.855,9.368,437752.474,1.379,23.992,0/5
+model: Ridge (linear),17.036,31.058,19.211,5.989,0.597,4.893,0/5
+no per-condition normalisation,18.957,32.282,17.995,9.885,0.739,6.813,0/5
+model: XGBoost,12.131,26.897,8.575,3.022,1.292,-0.056,3/5
+model: HistGB + XGBoost average,12.074,26.833,8.419,2.973,1.257,-0.11,4/5

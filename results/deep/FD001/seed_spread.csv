@@ -1,0 +1,4 @@
+net,cv_single_seed_mean,cv_single_seed_std,cv_single_seed_range,cv_seed_ensemble,cv_single_seed_delta_vs_hgb_mean,test_single_seed_mean,test_single_seed_range,test_seed_ensemble
+cnn,16.997,0.636,1.134,16.283,6.786,14.589,1.198,14.137
+gru,15.309,0.048,0.09,15.145,5.099,13.201,0.408,13.013
+tcn,16.536,0.34,0.665,15.899,6.325,14.994,1.092,14.296

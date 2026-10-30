@@ -1,0 +1,57 @@
+{
+  "config": {
+    "subset": "FD003",
+    "condition_norm": false,
+    "fault_modes": 2,
+    "rul_cap": 125,
+    "fail_window": 30,
+    "min_unique": 2,
+    "clip_quantiles": [
+      0.001,
+      0.999
+    ],
+    "op_margin_frac": 0.5,
+    "sensor_range_margin": 0.5,
+    "sensor_range_persist": 2,
+    "sensor_stuck_cycles": 15,
+    "roll_window": 10,
+    "slope_window": 20,
+    "ewm_span": 10,
+    "baseline_cycles": 10,
+    "val_frac": 0.2,
+    "new_frac": 0.3,
+    "cv_folds": 5,
+    "eval_min_cycles": 31,
+    "eval_max_rul": 200,
+    "anomaly_train_cycles": [
+      11,
+      40
+    ],
+    "anomaly_quantile": 0.99,
+    "anomaly_persist": 3,
+    "anomaly_healthy_rul": 125,
+    "interval_coverage": 0.8,
+    "review_width_quantile": 0.9,
+    "retrain_min_new_frac": 0.2,
+    "psi_alert": 0.2,
+    "promote_max_nasa_ratio": 1.1,
+    "promote_min_prob": 0.8,
+    "full_refit": false
+  },
+  "agent_config": {
+    "fail_window": 30,
+    "critical_rul_lower": 15,
+    "high_rul": 30,
+    "high_p_fail": 0.5,
+    "medium_rul": 60,
+    "low_rul": 100,
+    "review_interval_width": 44.7,
+    "review_min_cycles": 15,
+    "conflict_p_fail": 0.5,
+    "conflict_rul": 80,
+    "conflict_low_p_fail": 0.1,
+    "safety_buffer": 10,
+    "deescalate_cycles": 5,
+    "review_timeout_cycles": 10
+  }
+}
