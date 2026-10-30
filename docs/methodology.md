@@ -587,7 +587,10 @@ Real-fleet differences the design accounts for:
 - **Real drift** (new machines, seasons, sensor replacements) → the PSI trigger and promotion gate are built for exactly this.
 - **Cycles to calendar** → "due within N cycles" converted with each asset's usage rate and parts lead time.
 
-**Deployment sketch [Designed]:** machines publish telemetry over MQTT to a stream (e.g. Kafka); a scoring service computes features and predictions per new cycle (lightweight models allow edge or cloud inference); the agent writes work orders to the maintenance system (CMMS) through an API; training and registry run in the cloud.
+**Deployment sketch [Designed], no cloud needed:** two levels, both on site.
+- **On each machine (or its gateway):** features, scoring, the sensor-health check and the agent. The production model bundle (preprocessing, all models, thresholds) is **~10 MB per subset (measured: 9.4–10.0 MB)** and scores on CPU, so it runs offline; work orders queue until the link is back.
+- **On a local server at the depot or plant:** pools that site's fleet data (a single machine sees too few failures to learn from), retrains, runs the promotion gate and pushes new bundles to the machines. A full retrain cycle took 4–6 minutes per subset on a Kaggle machine; on-site CPU timing is not yet measured. MLflow (local SQLite), the registry and the dashboard all run locally.
+- Telemetry can reach the server over MQTT (or Kafka at larger sites); the agent writes work orders to the maintenance system (CMMS) through an API. A cloud is optional, for example to compare sites, not required.
 **Safe rollout:** backtest on historical sensor + maintenance logs → shadow mode alongside the current process → limited rollout with human sign-off → widen automation as measured precision and recall hold.
 
 ---
