@@ -197,6 +197,19 @@ border-radius:8px;padding:6px 9px;font-size:12px;box-shadow:0 4px 14px rgba(0,0,
 .play button{font:inherit;padding:5px 14px;border-radius:6px;border:1px solid var(--ring);background:var(--accent);color:#fff;cursor:pointer}
 input[type=range]{flex:1;min-width:160px;accent-color:var(--accent)}
 .muted{color:var(--muted)}
+.intro{background:var(--surface);border:1px solid var(--ring);border-left:3px solid var(--accent);border-radius:8px;padding:8px 12px;margin:0 0 14px;color:var(--ink2);font-size:13px}
+.intro b{color:var(--ink)}
+.helpbtn{border:1px solid var(--ring);background:var(--raised);color:var(--ink);border-radius:99px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer}
+.helpbtn:hover{border-color:var(--accent)}
+#tourSpot{position:fixed;z-index:30;border-radius:10px;box-shadow:0 0 0 3px var(--accent);pointer-events:none;display:none}
+.tourDim{position:fixed;z-index:29;background:rgba(0,0,0,.5);display:none}
+#tourCard{position:fixed;z-index:31;width:min(360px,calc(100vw - 32px));background:var(--raised);color:var(--ink);border:1px solid var(--ring);border-radius:12px;padding:14px 16px;box-shadow:0 10px 30px rgba(0,0,0,.25);display:none}
+#tourCard h3{margin:0 0 6px;font-size:15px}
+#tourCard p{margin:0 0 12px;font-size:13.5px;color:var(--ink2)}
+#tourCard .row{display:flex;align-items:center;gap:8px}
+#tourCard .row .muted{margin-right:auto;font-size:12px}
+#tourCard button{font:inherit;font-size:13px;border-radius:6px;padding:5px 12px;cursor:pointer;border:1px solid var(--ring);background:var(--raised);color:var(--ink)}
+#tourCard button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,520px),1fr));gap:14px}
 @media (max-width:600px){header{padding:10px 16px}.kpi .v{font-size:22px}}
 </style></head>
@@ -205,10 +218,14 @@ input[type=range]{flex:1;min-width:160px;accent-color:var(--accent)}
   <div><h1>Fleet Monitor</h1><div class="sub" id="runinfo"></div></div>
   <div class="seg" id="subsetSeg" role="group" aria-label="Subset"></div>
   <div class="sub" id="modelinfo" style="margin-left:auto"></div>
+  <button class="helpbtn" id="helpBtn" aria-label="Start the guided tour">? Guide</button>
 </header>
 <nav class="tabs" role="tablist" id="tabs"></nav>
 <main id="view"></main>
 <div class="tip" id="tip"></div>
+<div id="tourSpot"></div>
+<div class="tourDim"></div><div class="tourDim"></div><div class="tourDim"></div><div class="tourDim"></div>
+<div id="tourCard" role="dialog" aria-live="polite"></div>
 <script>
 const DATA = __DATA__;
 const SEV = ["NORMAL","LOW","MEDIUM","HIGH","CRITICAL"];
@@ -307,6 +324,7 @@ function renderHeader() {
 function render() {
   try { localStorage.setItem("fleetmon", JSON.stringify({tab: state.tab, subset: state.subset})); } catch(e) {}
   stopPlay(); renderHeader(); $("view").innerHTML = ""; VIEWS[state.tab]();
+  $("view").insertAdjacentHTML("afterbegin", `<p class="intro">${INTRO[state.tab]}</p>`);
 }
 const kpi = (v, l, d = "") => `<div class="card kpi"><div class="v">${v}</div><div class="l">${l}</div>${d ? `<div class="d">${d}</div>` : ""}</div>`;
 
@@ -549,7 +567,83 @@ VIEWS.impact = () => {
   if (cost.length) { costTable(); $("iLead").onchange = costTable; }
 };
 
+const INTRO = {
+  overview: "<b>Start here.</b> The whole system on one page: every engine in the four NASA test fleets, the work orders the agent raised, and how it compares with fixed-schedule maintenance. Click a fleet row to dig in.",
+  fleet: "<b>Every engine right now</b>, most urgent first. Severity comes from the rule-based agent. Click an engine to see its predicted remaining life over time, why the rules fired and its work order.",
+  orders: "<b>The maintenance queue the agent created on its own.</b> OPEN = sent automatically; NEEDS REVIEW = an exception for a human (uncertain prediction, short history, bad sensor data). Click an order for the full card.",
+  replay: "<b>Watch the system work live.</b> Press Play: held-out engines run cycle by cycle until they fail. Colours show the agent's severity; an engine turns grey when the agent's planned service falls due, before it would have failed.",
+  mlops: "<b>How the model is kept healthy.</b> Every training run is tracked and versioned; new data or drift triggers a retrain, and a statistical gate decides whether the new version replaces the old one.",
+  quality: "<b>Bad data is caught before it reaches a decision.</b> Ingest checks, the sensors kept, and a test where real engines get broken sensors on purpose: the gate must flag them and send the work order to a human.",
+  impact: "<b>Does it pay off?</b> The agent's severity against the truth, and maintenance on the replayed engines: unplanned failures, share of useful life used, and cost against the best possible fixed schedule.",
+};
+
+const TOUR = [
+  {tab: "overview", sel: "#subsetSeg", title: "Four fleets", body: "The NASA C-MAPSS data has four fleets of increasing difficulty (FD001 easiest, FD004 hardest). Pick one here; every tab follows the selected fleet."},
+  {tab: "overview", sel: "#view .kpis", title: "The headline numbers", body: "Engines monitored, work orders raised automatically, how many need a human, and how many near-failure engines the agent caught."},
+  {tab: "overview", sel: "#view .card table", title: "All fleets side by side", body: "Prediction error (RMSE, in cycles), how often the 80% range holds the truth, failures caught, and life used compared with a fixed schedule."},
+  {tab: "fleet", sel: "#fBody", title: "Engines, most urgent first", body: "Each row is one engine at its latest cycle: severity, predicted remaining life with its range, and failure probability. Click any row."},
+  {tab: "fleet", sel: "#engine", title: "One engine in detail", body: "Blue line = predicted remaining life, shaded band = 80% range, dashed line = the real answer (known only because this is test data). Below: why the rules fired, and the work order."},
+  {tab: "orders", sel: "#oBody tr:first-child", title: "The work-order queue", body: "Sorted by priority and due date, so this is the most urgent order. Orders marked NEEDS REVIEW are the only ones a human has to look at. Click any row for the full work-order card."},
+  {tab: "replay", sel: "#view .play", title: "Press Play", body: "Engines the model never trained on run cycle by cycle until failure. Watch them turn amber, orange, red as the agent escalates, then grey when the planned service falls due. None fails first."},
+  {tab: "replay", sel: "#pFeed", title: "The agent's log", body: "Every decision as it happens: order created, escalated, downgraded or closed, with the prediction and the real remaining life."},
+  {tab: "mlops", sel: "#view .grid > .card:nth-child(2)", title: "Retrain and promote", body: "New data or drift triggers a retrain. The new version replaces the old one only if, over 2,000 resamples, it is not clearly worse. The cards around it show the version history, sensor drift and how the model was chosen."},
+  {tab: "quality", sel: "#view > .card:last-child", title: "Broken sensors on purpose", body: "We broke sensors on real engines (stuck, dead, out of range, unknown condition). Every fault was caught and routed to a human."},
+  {tab: "impact", sel: "#view .grid > .card:nth-child(2)", title: "The payoff", body: "On engines the model never saw: zero unplanned failures while using far more of each engine's life than the safest fixed schedule. Next to it, the agent's severity against the truth (right of the diagonal = acted early, the safe side)."},
+];
+let tourIx = -1;
+function tourShow() {
+  const st = TOUR[tourIx];
+  if (state.tab !== st.tab) { state.tab = st.tab; render(); }
+  const el = document.querySelector(st.sel);
+  const spot = $("tourSpot"), card = $("tourCard");
+  card.innerHTML = `<h3>${st.title}</h3><p>${st.body}</p><div class="row"><span class="muted">${tourIx + 1} / ${TOUR.length}</span>
+    <button id="tSkip">Skip</button>${tourIx ? '<button id="tBack">Back</button>' : ""}<button class="primary" id="tNext">${tourIx === TOUR.length - 1 ? "Done" : "Next"}</button></div>`;
+  $("tSkip").onclick = tourEnd;
+  $("tNext").onclick = () => { if (tourIx === TOUR.length - 1) tourEnd(); else { tourIx++; tourShow(); } };
+  if ($("tBack")) $("tBack").onclick = () => { tourIx--; tourShow(); };
+  card.style.display = "block";
+  if (!el) { spot.style.display = "none"; document.querySelectorAll(".tourDim").forEach(d => d.style.display = "none"); card.style.left = "50%"; card.style.top = "30%"; card.style.transform = "translateX(-50%)"; return; }
+  el.scrollIntoView({block: "center", behavior: "instant"});
+  {  // layout is measured synchronously after the scroll
+    const r = el.getBoundingClientRect(), pad = 6;
+    const top = Math.max(4, r.top - pad), h = Math.min(innerHeight - 8, r.bottom + pad) - top;
+    const L = r.left - pad, W = r.width + 2 * pad;
+    Object.assign(spot.style, {display: "block", left: L + "px", top: top + "px", width: W + "px", height: h + "px"});
+    // four panels around the highlight dim the rest of the page
+    const dims = document.querySelectorAll(".tourDim"), boxes = [[0, 0, innerWidth, top], [0, top + h, innerWidth, innerHeight - top - h],
+      [0, top, Math.max(0, L), h], [L + W, top, Math.max(0, innerWidth - L - W), h]];
+    dims.forEach((d, i) => Object.assign(d.style, {display: "block", left: boxes[i][0] + "px", top: boxes[i][1] + "px", width: boxes[i][2] + "px", height: boxes[i][3] + "px"}));
+    card.style.transform = "";
+    // place the card next to the highlight without covering it: below, above, right, left; else a screen corner
+    const cw = card.offsetWidth, ch = card.offsetHeight, g = 14, m = 16;
+    const clampX = x => Math.min(Math.max(m, x), innerWidth - cw - m), clampY = y => Math.min(Math.max(m, y), innerHeight - ch - m);
+    let x, y;
+    if (r.bottom + g + ch <= innerHeight - m) { x = clampX(r.left); y = r.bottom + g; }
+    else if (r.top - g - ch >= m) { x = clampX(r.left); y = r.top - g - ch; }
+    else if (r.right + g + cw <= innerWidth - m) { x = r.right + g; y = clampY(r.top); }
+    else if (r.left - g - cw >= m) { x = r.left - g - cw; y = clampY(r.top); }
+    else { x = innerWidth - cw - m; y = innerHeight - ch - m; }
+    card.style.left = x + "px"; card.style.top = y + "px";
+  }
+}
+function tourStart() { stopPlay(); tourIx = 0; tourShow(); }
+function tourEnd() {
+  tourIx = -1; $("tourSpot").style.display = "none"; $("tourCard").style.display = "none";
+  document.querySelectorAll(".tourDim").forEach(d => d.style.display = "none");
+  try { localStorage.setItem("fleetmon_tour", "done"); } catch(e) {}
+}
+$("helpBtn").onclick = tourStart;
+document.querySelectorAll(".tourDim").forEach(d => d.onclick = tourEnd);  // click outside = close
+addEventListener("resize", () => { if (tourIx >= 0) tourShow(); });
+addEventListener("keydown", e => { if (tourIx < 0) return;
+  if (e.key === "Escape") tourEnd();
+  if (e.key === "ArrowRight" && tourIx < TOUR.length - 1) { tourIx++; tourShow(); }
+  if (e.key === "ArrowLeft" && tourIx > 0) { tourIx--; tourShow(); } });
+
 render();
+let seen = false;
+try { seen = localStorage.getItem("fleetmon_tour") === "done"; } catch(e) {}
+if (!seen) setTimeout(tourStart, 400);
 </script></body></html>
 """
 
